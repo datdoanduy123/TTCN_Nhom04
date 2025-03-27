@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 18:05:58
+/* Smarty version 5.4.3, created on 2025-03-27 18:04:56
   from 'file:block_category.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e531167ab9e7_65101449',
+  'unifunc' => 'content_67e530d8d7a728_23820110',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6c42cde0eee7b5ad2820780d954d24f3cc552457' => 
+    '8cec81c357e6951585f6bb939a30a1e0ba88a681' => 
     array (
       0 => 'block_category.tpl',
       1 => 1743073458,
@@ -20,14 +20,14 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e531167ab9e7_65101449 (\Smarty\Template $_smarty_tpl) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\modules\\news\\smarty';
+function content_67e530d8d7a728_23820110 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\modules\\news\\smarty';
 $_smarty_tpl->getSmarty()->getRuntime('TplFunction')->registerTplFunctions($_smarty_tpl, array (
   'menu' => 
   array (
-    'compiled_filepath' => 'E:\\xampp\\htdocs\\nukeviet\\src\\data\\cache\\smarty-compile\\6c42cde0eee7b5ad2820780d954d24f3cc552457_0.file_block_category.tpl.php',
-    'uid' => '6c42cde0eee7b5ad2820780d954d24f3cc552457',
-    'call_name' => 'smarty_template_function_menu_200479751467e531167807d4_16369306',
+    'compiled_filepath' => 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\data\\cache\\smarty-compile\\8cec81c357e6951585f6bb939a30a1e0ba88a681_0.file_block_category.tpl.php',
+    'uid' => '8cec81c357e6951585f6bb939a30a1e0ba88a681',
+    'call_name' => 'smarty_template_function_menu_66829567767e530d8c5f449_99867687',
   ),
 ));
 if (( !true || empty($_smarty_tpl->getValue('CONFIGS')['title_length'])) || $_smarty_tpl->getValue('CONFIGS')['title_length'] < 50) {
@@ -69,10 +69,10 @@ $(function() {
 <?php echo '</script'; ?>
 >
 <?php }
-/* smarty_template_function_menu_200479751467e531167807d4_16369306 */
-if (!function_exists('smarty_template_function_menu_200479751467e531167807d4_16369306')) {
-function smarty_template_function_menu_200479751467e531167807d4_16369306(\Smarty\Template $_smarty_tpl,$params) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\modules\\news\\smarty';
+/* smarty_template_function_menu_66829567767e530d8c5f449_99867687 */
+if (!function_exists('smarty_template_function_menu_66829567767e530d8c5f449_99867687')) {
+function smarty_template_function_menu_66829567767e530d8c5f449_99867687(\Smarty\Template $_smarty_tpl,$params) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\modules\\news\\smarty';
 $params = array_merge(array('name'=>'menu','data'=>array()), $params);
 foreach ($params as $key => $value) {
 $_smarty_tpl->assign($key, $value);
@@ -104,5 +104,5 @@ if ($_smarty_tpl->getValue('i') > 0) {?>
 <?php }
 }
 }}
-/*/ smarty_template_function_menu_200479751467e531167807d4_16369306 */
+/*/ smarty_template_function_menu_66829567767e530d8c5f449_99867687 */
 }

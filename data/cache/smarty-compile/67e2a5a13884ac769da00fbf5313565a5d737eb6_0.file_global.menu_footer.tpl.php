@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 18:06:01
+/* Smarty version 5.4.3, created on 2025-03-27 18:04:59
   from 'file:global.menu_footer.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e531193b2a03_44171480',
+  'unifunc' => 'content_67e530dbdc1701_43487969',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8b4d45c73fa28adf3137dfd8930daaab722eff4e' => 
+    '67e2a5a13884ac769da00fbf5313565a5d737eb6' => 
     array (
       0 => 'global.menu_footer.tpl',
       1 => 1743073458,
@@ -20,8 +20,8 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e531193b2a03_44171480 (\Smarty\Template $_smarty_tpl) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\blocks\\smarty';
+function content_67e530dbdc1701_43487969 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\blocks\\smarty';
 ?><ul class="menu">
 <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('MENU'), 'item');

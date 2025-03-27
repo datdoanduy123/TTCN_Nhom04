@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 18:05:58
+/* Smarty version 5.4.3, created on 2025-03-27 18:04:57
   from 'file:global.copyright.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e53116bfcb92_70344027',
+  'unifunc' => 'content_67e530d9a13935_70260165',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ebc12541dd582be95cbb0ac2cdb044f97940c4d5' => 
+    'b5fef3412f1da9acf1486b180e9f7adb5c95e8d4' => 
     array (
       0 => 'global.copyright.tpl',
       1 => 1743073458,
@@ -20,8 +20,8 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e53116bfcb92_70344027 (\Smarty\Template $_smarty_tpl) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\blocks\\smarty';
+function content_67e530d9a13935_70260165 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\blocks\\smarty';
 ?><div class="copyright">
     <span>&copy;&nbsp;<?php echo $_smarty_tpl->getValue('LANG')->get('copyright_by');?>
  <a href="<?php echo $_smarty_tpl->getValue('DATA')['copyright_url'];?>

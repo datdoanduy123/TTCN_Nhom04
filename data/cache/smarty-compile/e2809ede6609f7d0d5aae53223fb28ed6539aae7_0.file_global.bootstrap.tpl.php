@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 18:05:59
+/* Smarty version 5.4.3, created on 2025-03-27 18:04:58
   from 'file:global.bootstrap.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e531174ac388_16407236',
+  'unifunc' => 'content_67e530da48a751_37287228',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f2946472b03a40c6998ca593e136e547e18c6c6d' => 
+    'e2809ede6609f7d0d5aae53223fb28ed6539aae7' => 
     array (
       0 => 'global.bootstrap.tpl',
       1 => 1743073458,
@@ -20,14 +20,14 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e531174ac388_16407236 (\Smarty\Template $_smarty_tpl) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\modules\\menu\\smarty';
+function content_67e530da48a751_37287228 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\modules\\menu\\smarty';
 $_smarty_tpl->getSmarty()->getRuntime('TplFunction')->registerTplFunctions($_smarty_tpl, array (
   'menu' => 
   array (
-    'compiled_filepath' => 'E:\\xampp\\htdocs\\nukeviet\\src\\data\\cache\\smarty-compile\\f2946472b03a40c6998ca593e136e547e18c6c6d_0.file_global.bootstrap.tpl.php',
-    'uid' => 'f2946472b03a40c6998ca593e136e547e18c6c6d',
-    'call_name' => 'smarty_template_function_menu_5402699267e5311748dce5_26651648',
+    'compiled_filepath' => 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\data\\cache\\smarty-compile\\e2809ede6609f7d0d5aae53223fb28ed6539aae7_0.file_global.bootstrap.tpl.php',
+    'uid' => 'e2809ede6609f7d0d5aae53223fb28ed6539aae7',
+    'call_name' => 'smarty_template_function_menu_124708938267e530da3fead4_78592993',
   ),
 ));
 ?>
@@ -52,10 +52,10 @@ $_smarty_tpl->getSmarty()->getRuntime('TplFunction')->registerTplFunctions($_sma
 <?php echo '</script'; ?>
 >
 <?php }
-/* smarty_template_function_menu_5402699267e5311748dce5_26651648 */
-if (!function_exists('smarty_template_function_menu_5402699267e5311748dce5_26651648')) {
-function smarty_template_function_menu_5402699267e5311748dce5_26651648(\Smarty\Template $_smarty_tpl,$params) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\modules\\menu\\smarty';
+/* smarty_template_function_menu_124708938267e530da3fead4_78592993 */
+if (!function_exists('smarty_template_function_menu_124708938267e530da3fead4_78592993')) {
+function smarty_template_function_menu_124708938267e530da3fead4_78592993(\Smarty\Template $_smarty_tpl,$params) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\modules\\menu\\smarty';
 $params = array_merge(array('name'=>'menu','data'=>array()), $params);
 foreach ($params as $key => $value) {
 $_smarty_tpl->assign($key, $value);
@@ -103,5 +103,5 @@ if ($_smarty_tpl->getValue('i') > 0) {?>
 <?php }
 }
 }}
-/*/ smarty_template_function_menu_5402699267e5311748dce5_26651648 */
+/*/ smarty_template_function_menu_124708938267e530da3fead4_78592993 */
 }

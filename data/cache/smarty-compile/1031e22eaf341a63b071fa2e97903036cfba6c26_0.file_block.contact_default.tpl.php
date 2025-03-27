@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 18:05:59
+/* Smarty version 5.4.3, created on 2025-03-27 18:04:58
   from 'file:block.contact_default.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e53117a01374_83233244',
+  'unifunc' => 'content_67e530da98d688_89994171',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'bc7114b9e1ecb459ccb7b7ffc99153d089837df1' => 
+    '1031e22eaf341a63b071fa2e97903036cfba6c26' => 
     array (
       0 => 'block.contact_default.tpl',
       1 => 1743073458,
@@ -20,8 +20,8 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e53117a01374_83233244 (\Smarty\Template $_smarty_tpl) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\modules\\contact\\smarty';
+function content_67e530da98d688_89994171 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\modules\\contact\\smarty';
 ?><span class="visible-xs-inline-block"><a title="<?php echo $_smarty_tpl->getValue('LANG')->getModule('contactUs');?>
 " class="pointer button" data-toggle="tip" data-target="#contactList" data-click="y"><em class="icon-old-phone icon-lg"></em><span class="hidden"><?php echo $_smarty_tpl->getValue('LANG')->getModule('contactUs');?>
 </span></a></span>

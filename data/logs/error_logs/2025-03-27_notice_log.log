@@ -1,0 +1,70 @@
+{
+    "time": "Thu, 27 Mar 2025 12:04:54 +0100",
+    "server": "localhost",
+    "ip": "::1",
+    "errno": "2 (Warning)",
+    "errstr": "unlink(/data/logs/data_logs/cronjobs_429a32609f34167cc3d799d22d76844a.txt): No such file or directory",
+    "file": "/includes/core/cronjobs.php",
+    "line": 93,
+    "request": "/nukeviet/TTCN_Nhom04/sload.php",
+    "method": "POST",
+    "agent": "NUKEVIET CMS 5.0.00. Developed by VINADES. Url: https://nukeviet.vn. Code: 2f6f8daea15f644fe7dc7d69b998b203",
+    "backtrace": [
+        "#1 /sload.php(27)",
+        "#2 /includes/mainfile.php(496)",
+        "#3 /includes/core/cronjobs.php(93)"
+    ]
+}
+-------------------
+{
+    "time": "Thu, 27 Mar 2025 12:04:52 +0100",
+    "server": "localhost",
+    "ip": "::1",
+    "errno": "2 (Warning)",
+    "errstr": "rename(/data/cache/smarty-compile/wrt67e530d8d7ba16_79583477,/data/cache/smarty-compile/8cec81c357e6951585f6bb939a30a1e0ba88a681_0.file_block_category.tpl.php): Access is denied (code: 5)",
+    "file": "/includes/vendor/smarty/smarty/src/Smarty.php",
+    "line": 1724,
+    "request": "/nukeviet/TTCN_Nhom04/",
+    "method": "GET",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "backtrace": [
+        "#1 /index.php(332)",
+        "#2 /modules/news/funcs/main.php(441)",
+        "#3 /themes/default/theme.php(409)",
+        "#4 /includes/core/user_functions.php(269)",
+        "#5 /themes/default/modules/news/global.block_category.php(100)",
+        "#6 /themes/default/modules/news/global.block_category.php(77)",
+        "#7 /includes/vendor/smarty/smarty/src/Smarty.php(2121)",
+        "#8 /includes/vendor/smarty/smarty/src/Template.php(589)",
+        "#9 /includes/vendor/smarty/smarty/src/Template.php(655)",
+        "#10 /includes/vendor/smarty/smarty/src/Template.php(180)",
+        "#11 /includes/vendor/smarty/smarty/src/Template/Compiled.php(101)",
+        "#12 /includes/vendor/smarty/smarty/src/Template/Compiled.php(143)",
+        "#13 /includes/vendor/smarty/smarty/src/Template/Compiled.php(190)",
+        "#14 /includes/vendor/smarty/smarty/src/Template/Compiled.php(227)",
+        "#15 /includes/vendor/smarty/smarty/src/Smarty.php(1724)"
+    ]
+}
+-------------------
+{
+    "time": "Thu, 27 Mar 2025 12:04:52 +0100",
+    "server": "localhost",
+    "ip": "::1",
+    "errno": "8 (Notice)",
+    "errstr": "unserialize(): Error at offset 394 of 2237 bytes",
+    "file": "/includes/vendor/vinades/nukeviet/Cache/Files.php",
+    "line": 187,
+    "request": "/nukeviet/TTCN_Nhom04/",
+    "method": "GET",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "backtrace": [
+        "#1 /index.php(332)",
+        "#2 /modules/news/funcs/main.php(441)",
+        "#3 /themes/default/theme.php(409)",
+        "#4 /includes/core/user_functions.php(269)",
+        "#5 /themes/default/modules/freecontent/global.free_content.php(75)",
+        "#6 /themes/default/modules/freecontent/global.free_content.php(55)",
+        "#7 /includes/vendor/vinades/nukeviet/Cache/Files.php(187)"
+    ]
+}
+-------------------

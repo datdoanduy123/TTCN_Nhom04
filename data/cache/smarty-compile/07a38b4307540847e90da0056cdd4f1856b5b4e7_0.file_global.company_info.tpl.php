@@ -1,15 +1,15 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 18:06:00
+/* Smarty version 5.4.3, created on 2025-03-27 18:04:59
   from 'file:global.company_info.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e53118304843_43122980',
+  'unifunc' => 'content_67e530db3b02a7_01215502',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '4af070cd7493508f2eaceb010610788231612b4b' => 
+    '07a38b4307540847e90da0056cdd4f1856b5b4e7' => 
     array (
       0 => 'global.company_info.tpl',
       1 => 1743073458,
@@ -20,8 +20,8 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e53118304843_43122980 (\Smarty\Template $_smarty_tpl) {
-$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\blocks\\smarty';
+function content_67e530db3b02a7_01215502 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\TTCN_Nhom04\\themes\\default\\blocks\\smarty';
 ?><ul class="company_info" itemscope itemtype="http://schema.org/LocalBusiness">
     <li class="hide hidden">
         <span itemprop="image"><?php echo $_smarty_tpl->getValue('SITE_LOGO');?>
