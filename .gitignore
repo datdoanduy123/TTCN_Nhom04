@@ -1,0 +1,7 @@
+# Ignore everything
+/*
+
+# Nhưng vẫn theo dõi src/, README và .gitignore
+!/src/
+!/README*
+!/.gitignore
