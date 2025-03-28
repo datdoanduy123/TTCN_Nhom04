@@ -15,3 +15,44 @@
     ]
 }
 -------------------
+{
+    "time": "Fri, 28 Mar 2025 19:17:32 +0100",
+    "server": "localhost",
+    "ip": "::1",
+    "errno": "1 (Error)",
+    "errstr": "Uncaught PDOException: SQLSTATE&lbrack;42S02&rbrack;: Base table or view not found: 1146 Table 'quanlybanhang.nv5__modfuncs' doesn't exist in /includes/vendor/vinades/nukeviet/Core/Database.php:576",
+    "file": "/includes/vendor/vinades/nukeviet/Core/Database.php",
+    "line": 576,
+    "request": "/nukeviet/src/admin/vi/modules/setup/?setmodule=manager&checkss=e19f0dade524e4a5ccd8f5670f17e45c",
+    "method": "GET",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "backtrace": [
+        "#0 /includes/vendor/vinades/nukeviet/Core/Database.php(576): PDO->prepare('SELECT func_id,...', Array)",
+        "#1 /admin/modules/functions.php(260): NukeViet/Core/Database->prepare('SELECT func_id,...')",
+        "#2 /admin/modules/setup.php(123): nv_setup_data_module(NULL, 'manager', 0)",
+        "#3 /admin/index.php(170): require('E:/xampp/htdocs...')",
+        "#4 {main}",
+        "thrown"
+    ]
+}
+-------------------
+{
+    "time": "Fri, 28 Mar 2025 19:23:18 +0100",
+    "server": "localhost",
+    "ip": "::1",
+    "errno": "1 (Error)",
+    "errstr": "Uncaught PDOException: SQLSTATE&lbrack;42S02&rbrack;: Base table or view not found: 1146 Table 'quanlybanhang.nv5_vi_manager_products' doesn't exist in /includes/vendor/vinades/nukeviet/Core/Database.php:543",
+    "file": "/includes/vendor/vinades/nukeviet/Core/Database.php",
+    "line": 543,
+    "request": "/nukeviet/src/admin/vi/manager/",
+    "method": "GET",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "backtrace": [
+        "#0 /includes/vendor/vinades/nukeviet/Core/Database.php(543): PDO->query('SELECT /r/n      ...', NULL)",
+        "#1 /modules/manager/admin/main.php(29): NukeViet/Core/Database->query('SELECT /r/n      ...')",
+        "#2 /admin/index.php(170): require('E:/xampp/htdocs...')",
+        "#3 {main}",
+        "thrown"
+    ]
+}
+-------------------
