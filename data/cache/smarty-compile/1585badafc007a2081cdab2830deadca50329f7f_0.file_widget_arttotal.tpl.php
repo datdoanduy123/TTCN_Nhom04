@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:36:05
+/* Smarty version 5.4.3, created on 2025-03-27 23:45:41
   from 'file:widget_arttotal.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50df58e0991_78417348',
+  'unifunc' => 'content_67e580b58811a4_43149988',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1585badafc007a2081cdab2830deadca50329f7f' => 
     array (
       0 => 'widget_arttotal.tpl',
-      1 => 1742974442,
+      1 => 1743073457,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50df58e0991_78417348 (\Smarty\Template $_smarty_tpl) {
+function content_67e580b58811a4_43149988 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\modules\\news';
 ?><div class="card-body flex-grow-1 flex-shrink-1">
     <div class="d-flex justify-content-between">

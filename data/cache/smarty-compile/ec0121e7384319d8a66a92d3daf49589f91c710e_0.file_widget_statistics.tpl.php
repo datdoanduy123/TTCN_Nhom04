@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:36:04
+/* Smarty version 5.4.3, created on 2025-03-27 23:45:40
   from 'file:widget_statistics.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50df4d104f1_91112203',
+  'unifunc' => 'content_67e580b4c95103_68196236',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ec0121e7384319d8a66a92d3daf49589f91c710e' => 
     array (
       0 => 'widget_statistics.tpl',
-      1 => 1742974442,
+      1 => 1743073458,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50df4d104f1_91112203 (\Smarty\Template $_smarty_tpl) {
+function content_67e580b4c95103_68196236 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\modules\\siteinfo';
 ?><div class="flex-grow-1 flex-shrink-1 d-flex flex-column">
     <div class="p-3 border-bottom border-light-subtle">

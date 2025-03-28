@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:36:05
+/* Smarty version 5.4.3, created on 2025-03-27 23:45:41
   from 'file:widget_version.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50df5309554_00105544',
+  'unifunc' => 'content_67e580b531bcb1_35469400',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '030ca0e1a71cb755e777e034089a62aa0646a91f' => 
     array (
       0 => 'widget_version.tpl',
-      1 => 1742974442,
+      1 => 1743073458,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50df5309554_00105544 (\Smarty\Template $_smarty_tpl) {
+function content_67e580b531bcb1_35469400 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\modules\\siteinfo';
 ?><div class="card-body pb-0">
     <h5 class="card-title"><?php echo $_smarty_tpl->getValue('LANG')->getModule('version');?>

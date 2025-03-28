@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:38:03
+/* Smarty version 5.4.3, created on 2025-03-27 23:44:09
   from 'file:manage.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50e6b27f648_44571531',
+  'unifunc' => 'content_67e58059f05fe9_02091875',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '122abbf296fbfd3fc9636bc3299d02dd12b092b0' => 
     array (
       0 => 'manage.tpl',
-      1 => 1742974442,
+      1 => 1743073457,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50e6b27f648_44571531 (\Smarty\Template $_smarty_tpl) {
+function content_67e58059f05fe9_02091875 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\modules\\extensions';
 $_smarty_tpl->assign('themeIcons', array('admin'=>"<i class=\"fa-solid fa-cube\" title=\"".((string)$_smarty_tpl->getValue('LANG')->getModule('extType_admin'))."\"></i>",'sys'=>"<i class=\"fa-solid fa-cubes\" title=\"".((string)$_smarty_tpl->getValue('LANG')->getModule('extType_sys'))."\"></i>"), false, NULL);?>
 <div class="card">

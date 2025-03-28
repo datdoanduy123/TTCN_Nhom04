@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:35:46
+/* Smarty version 5.4.3, created on 2025-03-27 23:43:55
   from 'file:header.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50de22dfc50_26129487',
+  'unifunc' => 'content_67e5804bdc4457_71961678',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3bb9b508b49a2328c8e0a81cb9ea1c30e91fc490' => 
     array (
       0 => 'header.tpl',
-      1 => 1742974442,
+      1 => 1743073458,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50de22dfc50_26129487 (\Smarty\Template $_smarty_tpl) {
+function content_67e5804bdc4457_71961678 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\system';
 ?><!DOCTYPE html>
 <html lang="<?php echo (defined('NV_LANG_INTERFACE') ? constant('NV_LANG_INTERFACE') : null);?>

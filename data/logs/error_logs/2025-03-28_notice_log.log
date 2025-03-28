@@ -1,0 +1,22 @@
+{
+    "time": "Fri, 28 Mar 2025 12:20:23 +0100",
+    "server": "localhost",
+    "ip": "::1",
+    "errno": "8 (Notice)",
+    "errstr": "unserialize(): Error at offset 394 of 2237 bytes",
+    "file": "/includes/vendor/vinades/nukeviet/Cache/Files.php",
+    "line": 187,
+    "request": "/nukeviet/src/",
+    "method": "GET",
+    "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "backtrace": [
+        "#1 /index.php(332)",
+        "#2 /modules/news/funcs/main.php(441)",
+        "#3 /themes/default/theme.php(409)",
+        "#4 /includes/core/user_functions.php(269)",
+        "#5 /themes/default/modules/freecontent/global.free_content.php(75)",
+        "#6 /themes/default/modules/freecontent/global.free_content.php(55)",
+        "#7 /includes/vendor/vinades/nukeviet/Cache/Files.php(187)"
+    ]
+}
+-------------------

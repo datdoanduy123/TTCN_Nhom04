@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:38:13
+/* Smarty version 5.4.3, created on 2025-03-28 18:39:16
   from 'file:main.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50e75e1f785_21395615',
+  'unifunc' => 'content_67e68a646a7541_13976592',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b0bbb71309c31cd3f60f53e037c110031397784' => 
     array (
       0 => 'main.tpl',
-      1 => 1742974442,
+      1 => 1743073457,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50e75e1f785_21395615 (\Smarty\Template $_smarty_tpl) {
+function content_67e68a646a7541_13976592 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\modules\\modules';
 $_smarty_tpl->assign('tblNames', array('act'=>((string)$_smarty_tpl->getValue('LANG')->getModule('caption_actmod')),'deact'=>((string)$_smarty_tpl->getValue('LANG')->getModule('caption_deactmod')),'bad'=>((string)$_smarty_tpl->getValue('LANG')->getModule('caption_badmod'))), false, NULL);?>
 <div class="vstack gap-4">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:35:44
+/* Smarty version 5.4.3, created on 2025-03-27 23:43:54
   from 'file:login.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50de045af90_02116705',
+  'unifunc' => 'content_67e5804a2d6730_15670447',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '610165576b098f6b282d79c3b3069ea5a6938881' => 
     array (
       0 => 'login.tpl',
-      1 => 1742974442,
+      1 => 1743073458,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ))) {
-function content_67e50de045af90_02116705 (\Smarty\Template $_smarty_tpl) {
+function content_67e5804a2d6730_15670447 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\system';
 $_smarty_tpl->renderSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), (int) 0, $_smarty_current_dir);
 ?>

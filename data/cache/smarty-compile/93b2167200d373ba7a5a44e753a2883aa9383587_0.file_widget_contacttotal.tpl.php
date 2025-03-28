@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:36:06
+/* Smarty version 5.4.3, created on 2025-03-27 23:45:41
   from 'file:widget_contacttotal.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50df600dff2_83986780',
+  'unifunc' => 'content_67e580b5b8b630_64553005',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93b2167200d373ba7a5a44e753a2883aa9383587' => 
     array (
       0 => 'widget_contacttotal.tpl',
-      1 => 1742974442,
+      1 => 1743073457,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50df600dff2_83986780 (\Smarty\Template $_smarty_tpl) {
+function content_67e580b5b8b630_64553005 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\admin_future\\modules\\contact';
 ?><div class="card-body flex-grow-1 flex-shrink-1">
     <div class="d-flex justify-content-between">

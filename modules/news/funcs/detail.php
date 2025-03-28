@@ -1,5 +1,4 @@
 <?php
-
 /**
  * NukeViet Content Management System
  * @version 5.x

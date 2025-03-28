@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-27 15:36:19
+/* Smarty version 5.4.3, created on 2025-03-27 23:42:55
   from 'file:block.inform.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e50e033c11a0_10844425',
+  'unifunc' => 'content_67e5800f1575d3_74434422',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0aecd046c452584d3fd9751bac7a8b6a96a4c6b0' => 
     array (
       0 => 'block.inform.tpl',
-      1 => 1742974442,
+      1 => 1743073458,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e50e033c11a0_10844425 (\Smarty\Template $_smarty_tpl) {
+function content_67e5800f1575d3_74434422 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'E:\\xampp\\htdocs\\nukeviet\\src\\themes\\default\\modules\\inform\\smarty';
 ?><link href="<?php echo (defined('ASSETS_STATIC_URL') ? constant('ASSETS_STATIC_URL') : null);?>
 /js/perfect-scrollbar/style<?php echo (defined('AUTO_MINIFIED') ? constant('AUTO_MINIFIED') : null);?>
@@ -57,9 +57,9 @@ themes/<?php echo $_smarty_tpl->getValue('BLOCK_JS');?>
 ">
 <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('FILTERS'), 'vals', false, 'key');
-$foreach2DoElse = true;
+$foreach0DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('key')->value => $_smarty_tpl->getVariable('vals')->value) {
-$foreach2DoElse = false;
+$foreach0DoElse = false;
 ?>
                 <button type="button" class="btn <?php echo $_smarty_tpl->getValue('key');
 if ($_smarty_tpl->getValue('vals')['is_active']) {?> active<?php }?>" data-toggle="changeFilter" data-filter="<?php echo $_smarty_tpl->getValue('key');?>
