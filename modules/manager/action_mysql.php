@@ -31,15 +31,26 @@
      PRIMARY KEY (`id`)
  ) ENGINE = InnoDB COMMENT = 'Danh sách bải viết'";
 
- global $db, $db_config, $lang, $module_data;
 
  // Lệnh SQL tạo bảng
- $sql_create_categories = "CREATE TABLE IF NOT EXISTS `" . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_categories` (
+ $sql_create_module[] = $sql_create_categories = "CREATE TABLE IF NOT EXISTS `" . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_categories` (
      `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'ID danh mục',
      `name` VARCHAR(255) NOT NULL COMMENT 'Tên danh mục',
      `description` TEXT DEFAULT NULL COMMENT 'Mô tả danh mục',
      PRIMARY KEY (`id`)
  ) ENGINE = InnoDB COMMENT = 'Danh sách danh mục sản phẩm';";
+
+ $sql_create_module[] = $sql_create_products = "CREATE TABLE IF NOT EXISTS `" . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_products` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'ID sản phẩm',
+    `name` VARCHAR(255) NOT NULL COMMENT 'Tên sản phẩm',
+    `price` DECIMAL(10,2) NOT NULL COMMENT 'Giá sản phẩm',
+    `quantity` INT NOT NULL COMMENT 'Số lượng tồn kho',
+    `image` VARCHAR(255) DEFAULT NULL COMMENT 'Hình ảnh sản phẩm',
+    `description` TEXT DEFAULT NULL COMMENT 'Mô tả sản phẩm',
+    `category_id` INT DEFAULT NULL COMMENT 'Mã danh mục',
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`category_id`) REFERENCES `" . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_categories` (`id`) ON DELETE SET NULL
+ ) ENGINE = InnoDB COMMENT = 'Danh sách sản phẩm';";
  
 
  
