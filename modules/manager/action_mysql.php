@@ -53,6 +53,7 @@
     FOREIGN KEY (`category_id`) REFERENCES `" . $db_config['prefix'] . "_" . $lang . "_" . $module_data . "_categories` (`id`) 
         ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB COMMENT = 'Danh sách sản phẩm';";
+ // hello
 
 
 
