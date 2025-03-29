@@ -14,9 +14,9 @@ if (!defined('NV_MAINFILE')) {
 }
 
 $db_config['dbhost'] = '127.0.0.1';
-$db_config['dbport'] = '3306';
-$db_config['dbname'] = 'quanlybanhang';
-$db_config['dbsystem'] = 'quanlybanhang';
+$db_config['dbport'] = '';
+$db_config['dbname'] = 'nuke2';
+$db_config['dbsystem'] = 'nuke2';
 $db_config['dbuname'] = 'root';
 $db_config['dbpass'] = '';
 $db_config['dbtype'] = 'mysql';
@@ -28,7 +28,7 @@ $db_config['prefix'] = 'nv5';
 $global_config['site_domain'] = '';
 $global_config['name_show'] = 0;
 $global_config['idsite'] = 0;
-$global_config['sitekey'] = '85cd068e95ae58c7b5695c1147231d43';// Do not change sitekey!
+$global_config['sitekey'] = 'a49c3dfca0976331cd49bd574a2635bc';// Do not change sitekey!
 $global_config['hashprefix'] = '{SSHA512}';
 $global_config['cached'] = 'files';
 $global_config['session_handler'] = 'files';

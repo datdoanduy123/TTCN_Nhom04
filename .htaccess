@@ -142,7 +142,7 @@ ErrorDocument 504 /nukeviet/src/error.php?code=504
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /nukeviet/src/
+  RewriteBase /nukeviet-nukeviet2/src
 
   RewriteCond %{REQUEST_FILENAME} /api.php$ [NC]
   RewriteCond %{REQUEST_METHOD} !^(POST) [NC]

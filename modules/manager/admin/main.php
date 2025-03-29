@@ -50,8 +50,8 @@ if ($num) {
     $contents = $xtpl->text('main');
 } else {
     // Hiện thông báo chưa có dữ liệu
-    $xtpl->parse('empty');
-    $contents = $xtpl->text('empty');
+    $xtpl->parse('main');
+    $contents = $xtpl->text('main');
 }
 
 include NV_ROOTDIR . '/includes/header.php';
