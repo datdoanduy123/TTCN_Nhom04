@@ -14,9 +14,9 @@ if (!defined('NV_MAINFILE')) {
 }
 
 $db_config['dbhost'] = '127.0.0.1';
-$db_config['dbport'] = '';
-$db_config['dbname'] = 'nuke2';
-$db_config['dbsystem'] = 'nuke2';
+$db_config['dbport'] = '3306';
+$db_config['dbname'] = 'quanlybanhang';
+$db_config['dbsystem'] = 'quanlybanhang';
 $db_config['dbuname'] = 'root';
 $db_config['dbpass'] = '';
 $db_config['dbtype'] = 'mysql';
