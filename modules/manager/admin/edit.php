@@ -50,7 +50,7 @@ if ($nv_Request->isset_request('submit1', 'post')) {
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 
         if ($stmt->execute()) {
-            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?module=' . $module_data . '&op=main');
+            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name);
         } else {
             throw new Exception('Lỗi khi cập nhật dữ liệu.');
         }

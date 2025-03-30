@@ -15,10 +15,8 @@
  
  $submenu['main'] = "Quản lý sản phẩm";
 
- $submenu['create2'] = $nv_Lang->getModule('create');
- $submenu['create3'] = $nv_Lang->getModule('create');
- $submenu['create4'] = $nv_Lang->getModule('create');
-
+ $submenu['create_product'] = $nv_Lang->getModule('create_product');
+ $submenu['create_category'] = $nv_Lang->getModule('create_category');
 
  if (defined('NV_IS_SPADMIN')) {
     $submenu['config'] = $nv_Lang->getModule('config');

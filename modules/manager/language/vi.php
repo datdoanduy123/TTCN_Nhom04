@@ -19,6 +19,7 @@
  $lang_translator['info'] = '';
  $lang_translator['langtype'] = 'lang_module';
  
- $lang_module['list'] = 'Danh sách bài viết';
- $lang_module['create'] = 'Tạo bài viết';
+ $lang_module['list'] = 'Danh sách sản phẩm';
+ $lang_module['create_product'] = 'Thêm sản phẩm mới';
+ $lang_module['create_category'] = 'Thêm sản danh mục mới';
  $lang_module['empty'] = 'Chưa có dữ liệu';

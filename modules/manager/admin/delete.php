@@ -12,3 +12,19 @@
 if (!defined('NV_IS_FILE_ADMIN')) {
     exit('Stop!!!');
 }
+
+$id = $nv_Request->get_int('id', 'get', 0);
+
+if ($id > 0) {
+    $sql = 'DELETE FROM `' . NV_PREFIXLANG . '_' . $module_data . '_products` WHERE id=:id';
+    $sth = $db->prepare($sql);
+    $sth->bindParam(':id', $id, PDO::PARAM_INT);
+
+    if ($sth->execute()) {
+        nv_redirect_location(NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name);
+    } else {
+        die('Lỗi khi xóa dữ liệu!');
+    }
+} else {
+    die('ID không hợp lệ!');
+}

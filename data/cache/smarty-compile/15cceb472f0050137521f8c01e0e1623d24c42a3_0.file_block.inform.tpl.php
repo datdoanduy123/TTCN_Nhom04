@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-30 01:25:25
+/* Smarty version 5.4.3, created on 2025-03-30 21:17:23
   from 'file:block.inform.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e83b15a2be82_13112831',
+  'unifunc' => 'content_67e952732b7824_60617409',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e83b15a2be82_13112831 (\Smarty\Template $_smarty_tpl) {
+function content_67e952732b7824_60617409 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\modules\\inform\\smarty';
 ?><link href="<?php echo (defined('ASSETS_STATIC_URL') ? constant('ASSETS_STATIC_URL') : null);?>
 /js/perfect-scrollbar/style<?php echo (defined('AUTO_MINIFIED') ? constant('AUTO_MINIFIED') : null);?>
@@ -57,9 +57,9 @@ themes/<?php echo $_smarty_tpl->getValue('BLOCK_JS');?>
 ">
 <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('FILTERS'), 'vals', false, 'key');
-$foreach0DoElse = true;
+$foreach2DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('key')->value => $_smarty_tpl->getVariable('vals')->value) {
-$foreach0DoElse = false;
+$foreach2DoElse = false;
 ?>
                 <button type="button" class="btn <?php echo $_smarty_tpl->getValue('key');
 if ($_smarty_tpl->getValue('vals')['is_active']) {?> active<?php }?>" data-toggle="changeFilter" data-filter="<?php echo $_smarty_tpl->getValue('key');?>

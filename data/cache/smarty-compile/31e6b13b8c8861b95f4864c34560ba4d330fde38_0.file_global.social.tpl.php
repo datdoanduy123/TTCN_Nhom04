@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-29 21:54:27
+/* Smarty version 5.4.3, created on 2025-03-30 21:17:26
   from 'file:global.social.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e809a31cc121_07116992',
+  'unifunc' => 'content_67e952766c8585_16354195',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e809a31cc121_07116992 (\Smarty\Template $_smarty_tpl) {
+function content_67e952766c8585_16354195 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\blocks\\smarty';
 ?><span class="visible-xs-inline-block"><a title="<?php echo $_smarty_tpl->getValue('LANG')->get('joinnow');?>
 " class="pointer button" data-toggle="tip" data-target="#socialList" data-click="y"><em class="fa fa-share-alt fa-lg"></em><span class="hidden"><?php echo $_smarty_tpl->getValue('LANG')->get('joinnow');?>
@@ -31,9 +31,9 @@ $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\defa
     <ul class="socialList">
 <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('SOCIALS'), 'social');
-$foreach13DoElse = true;
+$foreach14DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('social')->value) {
-$foreach13DoElse = false;
+$foreach14DoElse = false;
 ?>
         <li>
             <a href="<?php echo $_smarty_tpl->getValue('social')['href'];?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-29 21:54:19
+/* Smarty version 5.4.3, created on 2025-03-30 21:17:24
   from 'file:global.company_info.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e8099b48c5f5_64609485',
+  'unifunc' => 'content_67e9527483e829_66274522',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e8099b48c5f5_64609485 (\Smarty\Template $_smarty_tpl) {
+function content_67e9527483e829_66274522 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\blocks\\smarty';
 ?><ul class="company_info" itemscope itemtype="http://schema.org/LocalBusiness">
     <li class="hide hidden">
@@ -52,9 +52,9 @@ if (!( !true || empty($_smarty_tpl->getValue('DATA')['company_phone']))) {?>
     <li><em class="fa fa-phone"></em><span><?php echo $_smarty_tpl->getValue('LANG')->get('company_phone');?>
 : <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('DATA')['company_phone'], 'value', false, 'key');
-$foreach10DoElse = true;
+$foreach4DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('key')->value => $_smarty_tpl->getVariable('value')->value) {
-$foreach10DoElse = false;
+$foreach4DoElse = false;
 if ($_smarty_tpl->getValue('key') > 0) {?>&nbsp; <?php }
 if ((true && (true && null !== ($_smarty_tpl->getValue('value')[1] ?? null)))) {?><a href="tel:<?php echo $_smarty_tpl->getValue('value')[1];?>
 "><?php }?><span itemprop="telephone"><?php echo $_smarty_tpl->getValue('value')[0];?>
@@ -71,9 +71,9 @@ if (!( !true || empty($_smarty_tpl->getValue('DATA')['company_email']))) {?>
     <li><em class="fa fa-envelope"></em><span><?php echo $_smarty_tpl->getValue('LANG')->get('company_email');?>
 : <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('DATA')['company_email'], 'value', false, 'key');
-$foreach11DoElse = true;
+$foreach5DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('key')->value => $_smarty_tpl->getVariable('value')->value) {
-$foreach11DoElse = false;
+$foreach5DoElse = false;
 if ($_smarty_tpl->getValue('key') > 0) {?>&nbsp; <?php }?><a href="mailto:<?php echo $_smarty_tpl->getSmarty()->getModifierCallback('escape')($_smarty_tpl->getValue('value'), "hex");?>
 "><span itemprop="email"><?php echo $_smarty_tpl->getSmarty()->getModifierCallback('escape')($_smarty_tpl->getValue('value'), "hexentity");?>
 </span></a><?php
@@ -84,9 +84,9 @@ if (!( !true || empty($_smarty_tpl->getValue('DATA')['company_website']))) {?>
     <li><em class="fa fa-globe"></em><span><?php echo $_smarty_tpl->getValue('LANG')->get('company_website');?>
 : <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('DATA')['company_website'], 'value', false, 'key');
-$foreach12DoElse = true;
+$foreach6DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('key')->value => $_smarty_tpl->getVariable('value')->value) {
-$foreach12DoElse = false;
+$foreach6DoElse = false;
 if ($_smarty_tpl->getValue('key') > 0) {?>&nbsp; <?php }?><a href="<?php echo $_smarty_tpl->getValue('value');?>
 " target="_blank"><span itemprop="url"><?php echo $_smarty_tpl->getValue('value');?>
 </span></a><?php
