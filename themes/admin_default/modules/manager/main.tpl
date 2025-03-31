@@ -22,7 +22,7 @@
                  <td>{ROW.name}</td>
                  <td>{ROW.price}</td>
                  <td>{ROW.quantity}</td>
-                 <td>{ROW.image}</td>
+                 <td><img src="{ROW.image_path}" width="100"></td>
                  <td>{ROW.description}</td>
                  <td>{ROW.category_name}</td> 
 

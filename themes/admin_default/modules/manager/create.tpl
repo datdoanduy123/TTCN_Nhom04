@@ -1,6 +1,6 @@
 <!-- BEGIN: main -->
 <h2 class="mb-4">Thêm sản phẩm</h2>
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data>
     <table class="table table-bordered">
         <tbody>
             <tr>
@@ -19,8 +19,8 @@
             </tr>
             
             <tr>
-                <td><strong>Hình ảnh (URL)</strong></td>
-                <td><input type="text" name="image" id="image" class="w300 form-control" /></td>
+                <td><strong>Hình ảnh</strong></td>
+                <td><input type="file" name="image" id="image" class="w300 form-control" /></td>
             </tr>
             
             <tr>

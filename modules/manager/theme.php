@@ -32,7 +32,6 @@
      $xtpl->assign('LANG', \NukeViet\Core\Language::$lang_module);
      $xtpl->assign('GLANG', \NukeViet\Core\Language::$lang_global);
  
-     // Truyền giá trị tìm kiếm vào template
      $xtpl->assign('SEARCH_VALUE', htmlspecialchars($search));
  
      if (!empty($array_data)) {
