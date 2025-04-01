@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-03-30 21:17:27
+/* Smarty version 5.4.3, created on 2025-04-01 19:51:17
   from 'file:block.free_content.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67e95277118217_82602596',
+  'unifunc' => 'content_67ebe14599a173_56781097',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,15 +20,15 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67e95277118217_82602596 (\Smarty\Template $_smarty_tpl) {
+function content_67ebe14599a173_56781097 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\modules\\freecontent\\smarty';
 ?><div class="panel-body">
     <div class="featured-products">
 <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('LIST'), 'row');
-$foreach16DoElse = true;
+$foreach14DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('row')->value) {
-$foreach16DoElse = false;
+$foreach14DoElse = false;
 ?>
         <div class="row clearfix">
 <?php if (( !true || empty($_smarty_tpl->getValue('row')['link']))) {?>
