@@ -2,7 +2,7 @@
 if (!defined('NV_IS_FILE_ADMIN')) {
     exit('Stop!!!');
 }
-
+$page_title = $nv_Lang->getModule('create_category');
 if ($nv_Request->isset_request('submit_category', 'post')) {
     $name = $nv_Request->get_title('name', 'post', '', 255);
     $description = $nv_Request->get_textarea('description', '', '');

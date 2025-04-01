@@ -19,7 +19,9 @@
      'delete',
      'create_category',
      'create_product',
-     'upload',
+     'customer',
+     'create_customer',
+     'edit_customer',
  ];
  
  define('NV_IS_FILE_ADMIN', true);  

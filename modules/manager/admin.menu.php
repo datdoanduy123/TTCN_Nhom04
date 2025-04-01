@@ -17,7 +17,7 @@
 
  $submenu['create_product'] = $nv_Lang->getModule('create_product');
  $submenu['create_category'] = $nv_Lang->getModule('create_category');
- $submenu['upload'] = $nv_Lang->getModule('upload');
+ $submenu['customer'] = $nv_Lang->getModule('customer');
 
  if (defined('NV_IS_SPADMIN')) {
     $submenu['config'] = $nv_Lang->getModule('config');
