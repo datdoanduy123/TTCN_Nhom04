@@ -21,27 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $image = '';
 
     // Xử lý upload ảnh
-    if (!empty($_FILES['image']['name'])) {
-        $target_dir = NV_ROOTDIR . "/uploads/" . $module_name . "/";
-        if (!is_dir($target_dir)) {
-            mkdir($target_dir, 0777, true); // Tạo thư mục nếu chưa có
-        }
-        $imageName = time() . '_' . basename($_FILES["image"]["name"]);
-        $target_file = $target_dir . $imageName;
-        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-        $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
-
-        // Kiểm tra định dạng file
-        if (in_array($imageFileType, $allowTypes)) {
-            if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-                $image = $imageName; // Chỉ lưu tên file
-            } else {
-                die("Lỗi: Không thể upload file!");
-            }
-        } else {
-            die("Lỗi: Chỉ chấp nhận file JPG, PNG, JPEG, GIF!");
-        }
-    }
+    
 
     // Lưu vào database
     $sql = "INSERT INTO " . NV_PREFIXLANG . "_" . $module_data . "_products (name, price, quantity, category_id, image) 
@@ -82,10 +62,8 @@ if ($num) {
     foreach ($_rows as $row) {
         $row['edit_url'] = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=edit&id=' . $row['id'];
         $row['delete_url'] = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=delete&id=' . $row['id'];
-        $create_url = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=create';
+        $row['image_path'] = !empty($row['image']) ? $row['image'] : NV_BASE_SITEURL . 'uploads/no-image.png'; // Nếu không có ảnh, hiển thị ảnh mặc định
 
-        $xtpl->assign('CREATE_URL', $create_url);
-        $row['image_path'] = !empty($row['image']) ? NV_BASE_SITEURL . "uploads/" . $module_name . "/" . $row['image'] : NV_BASE_SITEURL . "uploads/default.png";
         $xtpl->assign('ROW', $row);
         $xtpl->parse('main.loop');
     }

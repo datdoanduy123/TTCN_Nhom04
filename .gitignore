@@ -1,0 +1,24 @@
+# 1. Bỏ qua file cấu hình server & hệ thống
+config.php
+.htaccess
+web.config
+
+# 2. Bỏ qua thư mục chứa dữ liệu tải lên và cache
+uploads/
+data/
+
+# 3. Bỏ qua file log, backup, cache
+*.log
+*.bak
+*.cache
+
+# 4. Composer & Node.js dependencies
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# 5. Cấu hình IDE
+.vscode/
+.idea/
+*.sublime-workspace

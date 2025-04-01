@@ -1,6 +1,6 @@
 <!-- BEGIN: main -->
 <h2 class="mb-4">Thêm sản phẩm</h2>
-<form action="" method="post" enctype="multipart/form-data>
+<form  method="post" enctype="multipart/form-data">
     <table class="table table-bordered">
         <tbody>
             <tr>
@@ -19,10 +19,14 @@
             </tr>
             
             <tr>
-                <td><strong>Hình ảnh</strong></td>
-                <td><input type="file" name="image" id="image" class="w300 form-control" /></td>
+                <td><label>File:</label></td>
+                <td>
+                    <input type="file" name="image" id="image" class="w300 form-control" />
+                    <br>
+                    <img id="preview" src="{image}" width="150" style="display: {DISPLAY_IMAGE}; margin-top: 10px;" />
+                </td>
             </tr>
-            
+
             <tr>
                 <td><strong>Danh mục</strong><sup class="required">(*)</sup></td>
                 <td>
@@ -43,4 +47,16 @@
         </tbody>
     </table>
 </form>
+
+<script>
+    document.getElementById("image").addEventListener("change", function(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById("preview");
+            output.src = reader.result;
+            output.style.display = "block";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+</script>
 <!-- END: main -->

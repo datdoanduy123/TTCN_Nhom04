@@ -18,7 +18,8 @@
      'edit',
      'delete',
      'create_category',
-     'create_product'
+     'create_product',
+     'upload',
  ];
  
  define('NV_IS_FILE_ADMIN', true);  

@@ -24,7 +24,7 @@
                 <td>{ROW.name}</td>
                 <td>{ROW.price}</td>
                 <td>{ROW.quantity}</td>
-                <td><img src="images/{ROW.image}" width="50"></td>
+                <td><img src="{ROW.image_path}" width="100" height="100" onerror="this.onerror=null; this.src='uploads/no-image.png';"></td>                
                 <td>{ROW.description}</td>
                 <td>{ROW.category_name}</td>
             </tr>

@@ -36,7 +36,10 @@
  
      if (!empty($array_data)) {
          foreach ($array_data as $value) {
-             $xtpl->assign('ROW', $value);
+
+            $value['image_path'] = !empty($value['image']) ? $value['image'] : NV_BASE_SITEURL . 'uploads/no-image.png';
+            $xtpl->assign('ROW', $value);
+
              $xtpl->parse('main.loop');
          }
      }
