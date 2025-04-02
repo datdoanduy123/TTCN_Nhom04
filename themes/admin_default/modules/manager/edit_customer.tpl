@@ -5,7 +5,7 @@
     <table class="table table-bordered">
         <tbody>
             <tr>
-                <td><strong>Tên</strong><sup class="required">(*)</sup></td>
+                <td><strong>Name</strong><sup class="required">(*)</sup></td>
                 <td><input type="text" name="name" id="name" class="w300 form-control" value="{CUSTOMER.name}" required /></td>
             </tr>
 
@@ -15,8 +15,12 @@
             </tr>
 
             <tr>
-                <td><strong>Số điện thoại</strong></td>
+                <td><strong>Phone Number</strong></td>
                 <td><input type="text" name="phone" id="phone" class="w300 form-control" value="{CUSTOMER.phone}" /></td>
+            </tr>
+            <tr>
+                <td><strong>Address</strong></td>
+                <td><input type="text" name="address" id="address" class="w300 form-control" value="{CUSTOMER.address}" /></td>
             </tr>
 
             <tr>

@@ -13,6 +13,13 @@ if (!defined('NV_IS_FILE_ADMIN')) {
 $page_title = $nv_Lang->getModule('list_customer');
 
 $array = [];
+// Xử lý yêu cầu xóa khách hàng
+if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
+    $delete_id = (int)$_GET['delete'];
+    $db->query('DELETE FROM ' . NV_PREFIXLANG . '_manager_customers WHERE id=' . $delete_id);
+    header('Location: ' . NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=list_customer');
+    exit();
+}
 
 // Truy vấn cơ sở dữ liệu để lấy danh sách khách hàng
 $query = $db->query('SELECT * FROM ' . NV_PREFIXLANG . '_manager_customers');
@@ -20,7 +27,7 @@ $query = $db->query('SELECT * FROM ' . NV_PREFIXLANG . '_manager_customers');
 while ($row = $query->fetch()) {
     $row['url_edit_customer'] = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=edit_customer&id=' . $row['id'];
 
-    $row['url_delete'] = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=delete&id=' . $row['id'];
+    $row['url_delete_customer'] = NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=delete_customer&id=' . $row['id'];
 
     $array[$row['id']] = $row;
 }

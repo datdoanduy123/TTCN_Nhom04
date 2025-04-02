@@ -22,6 +22,7 @@
      'customer',
      'create_customer',
      'edit_customer',
+     'delete_customer',
  ];
  
  define('NV_IS_FILE_ADMIN', true);  
