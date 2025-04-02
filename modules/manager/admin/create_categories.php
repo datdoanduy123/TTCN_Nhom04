@@ -2,6 +2,7 @@
 if (!defined('NV_IS_FILE_ADMIN')) {
     exit('Stop!!!');
 }
+$page_title = $nv_Lang->getModule('create_categories');
 
 if ($nv_Request->isset_request('submit_category', 'post')) {
     $name = $nv_Request->get_title('name', 'post', '', 255);
@@ -21,7 +22,7 @@ if ($nv_Request->isset_request('submit_category', 'post')) {
         $stmt->bindParam(':description', $description, PDO::PARAM_STR);
         
         if ($stmt->execute()) {
-            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?module=' . $module_data);
+            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=categories');
             exit(); // Dừng thực thi script sau khi chuyển hướng
         } else {
             throw new Exception('Lỗi khi thêm danh mục.');
@@ -32,7 +33,7 @@ if ($nv_Request->isset_request('submit_category', 'post')) {
 }
 
 // Tạo XTemplate
-$xtpl = new XTemplate('add_category.tpl', NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/modules/' . $module_file);
+$xtpl = new XTemplate('create_categories.tpl', NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/modules/' . $module_file);
 $xtpl->assign('LANG', \NukeViet\Core\Language::$lang_module);
 $xtpl->assign('GLANG', \NukeViet\Core\Language::$lang_global);
 

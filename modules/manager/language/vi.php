@@ -21,5 +21,13 @@
  
  $lang_module['list'] = 'Danh sách sản phẩm';
  $lang_module['create_product'] = 'Thêm sản phẩm mới';
- $lang_module['create_category'] = 'Thêm sản danh mục mới';
+ $lang_module['create_categories'] = 'Thêm danh mục sản phẩm';
+ $lang_module['categores'] = 'Danh mục sản phẩm';
  $lang_module['empty'] = 'Chưa có dữ liệu';
+ $lang_module['save'] = 'Lưu lại';
+ $lang_module['customer'] = 'Quản lý khách hàng';
+ $lang_module['create_customer'] = 'Thêm khách hàng';
+ $lang_module['edit_customer'] = 'Sửa thông tin khách hàng';
+ $lang_module['edit_categories'] = 'Sửa thông tin danh mục';
+ $lang_module['list_customer'] = 'Danh sách khách hàng';
+ $lang_module['categories'] = 'Danh sách danh muc';

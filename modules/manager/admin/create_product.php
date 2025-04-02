@@ -11,7 +11,7 @@ if (!defined('NV_IS_FILE_ADMIN')) {
     exit('Stop!!!');
 }
 
-
+$page_title = $nv_Lang->getModule('create_product');
 if ($nv_Request->isset_request('submit1', 'post')) {
     $name = $nv_Request->get_title('name', 'post', '', 250);
     $price = $nv_Request->get_int('price', 'post', 0);

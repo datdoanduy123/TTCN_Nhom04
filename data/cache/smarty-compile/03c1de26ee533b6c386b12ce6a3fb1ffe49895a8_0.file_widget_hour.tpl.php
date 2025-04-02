@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-01 19:53:57
+/* Smarty version 5.4.3, created on 2025-04-02 21:54:38
   from 'file:widget_hour.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ebe1e5b455c4_12130515',
+  'unifunc' => 'content_67ed4faeea6ff1_86894199',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67ebe1e5b455c4_12130515 (\Smarty\Template $_smarty_tpl) {
+function content_67ed4faeea6ff1_86894199 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\admin_future\\modules\\statistics';
 ?><div class="card-body d-flex flex-column">
     <h5 class="card-title"><?php echo $_smarty_tpl->getValue('LANG')->getModule('statbyhour1');?>

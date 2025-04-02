@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-01 19:51:17
+/* Smarty version 5.4.3, created on 2025-04-02 22:17:39
   from 'file:global.menu_footer.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ebe145295974_78000442',
+  'unifunc' => 'content_67ed5513e356d7_02447008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,14 +20,14 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67ebe145295974_78000442 (\Smarty\Template $_smarty_tpl) {
+function content_67ed5513e356d7_02447008 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\blocks\\smarty';
 ?><ul class="menu">
 <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('MENU'), 'item');
-$foreach13DoElse = true;
+$foreach14DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('item')->value) {
-$foreach13DoElse = false;
+$foreach14DoElse = false;
 ?>
     <li>
         <a href="<?php echo $_smarty_tpl->getValue('item')['link'];?>
