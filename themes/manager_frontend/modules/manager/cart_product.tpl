@@ -1,0 +1,163 @@
+<!-- BEGIN: main -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/card_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="top-content">
+        <a href="index.html">
+            <i class="fa-solid fa-angle-left" style="color: #005eff;"></i> Mua thêm sản phẩm khác
+        </a>
+        <h3>Giỏ hàng của bạn</h3>
+    </div>
+    <div class="card2">
+        <ul class="listCard">
+            <li>
+                <div><img src="images/products/dongho1.jpg"/></div>
+                <div class="name-pro">
+                    <h4>Xiaomi Band 2</h4>
+                    <div class="color">Màu: <span class="color-text"> Hồng </span><i class="fa-solid fa-caret-down" style="color: #005eff;"></i></div>
+                </div>
+                <div class="price">1.000.000 <sup>đ</sup></div>
+                <div>
+                    <button onclick="">-</button>
+                    <div class="count">2</div>
+                    <button onclick="">+</button>
+                </div> 
+            </li>
+            <li>
+                <div><img src="images/products/dongho3.jpg"/></div>
+                <div class="name-pro">
+                    <h4>Apple watch</h4>
+                    <div class="color">Màu: <span class="color-text"> Đen </span><i class="fa-solid fa-caret-down" style="color: #005eff;"></i></div>
+                </div>
+                <div class="price">670.000 <sup>đ</sup></div>
+                <div>
+                    <button onclick="">-</button>
+                    <div class="count">3</div>
+                    <button onclick="">+</button>
+                </div> 
+            </li>
+        </ul>
+        <div><p>Tạm tính (5 sản phẩm)</p><span>24.740.000 <sup>đ</sup></span></div>
+
+        <!-- Thông tin khách hàng(Hoàng làm tiếp) -->      
+        <div class="TTKH">
+            <form > 
+            
+                <p>THÔNG TIN KHÁCH HÀNG</p>
+                <div>
+                    
+                    <input type="radio" id="male" name="gender" value="Nam">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ">
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="other" name="gender" value="Khác">
+                    <label for="other">Khác</label>
+                </div>
+                <br>
+                <div class="pn">
+                    
+                    <input type="text" id="name" name="name" placeholder=" Họ và Tên">
+                    <input type="tel" id="phone" name="phone" placeholder=" Số điện thoại">
+                </div>
+                
+                
+                <br>
+                <div>
+                    <p>CHỌN CÁCH THỨC NHẬN HÀNG</p>
+                    <input type="radio" id="Diachi" name="Diachi" value="Giao tận nơi">
+                    <label for="male">Giao tận nơi</label>
+                    <input type="radio" id="Diachi" name="Diachi" value="Nhận tại siêu thị">
+                    <label for="female">Nhận tại siêu thị</label>
+                    <br>
+                    
+                    <div class="baoboc">
+                        <p>Chọn địa chỉ để biết thời gian nhận hàng và phí vận chuyển (nếu có)</p>
+                        <select id="location" name="location">
+                            <option value="Hà Nội">Tỉnh,Thành</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Cần Thơ">Cần Thơ</option>
+                            <option value="Cần Thơ">...</option>
+                            
+                        </select>
+                        <select id="location" name="location">
+                            <option value="Hà Nội">Quận huyện</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Cần Thơ">Cần Thơ</option>
+                            <option value="Cần Thơ">...</option>
+                            
+                        </select>
+                        <select id="location" name="location">
+                            <option value="Hà Nội">Phường xã</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Cần Thơ">Cần Thơ</option>
+                            <option value="Cần Thơ">...</option>
+                            
+                        </select>
+                        <input type="text" id="name" name="name" placeholder=" Số nhà,tên đường">
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="YC">
+                    <input type="text" id="name" name="name" placeholder=" Yêu cầu khác(Không bắt buộc)">
+                </div>
+                <br>
+                <div class="Khac">
+                    <div class="kc">
+                        <input type="checkbox" name="" id="">Gọi người khác nhận hàng (nếu có)
+                    </div>
+                   
+                    <div class="kc">
+                        <input type="checkbox" name="" id="">Hướng dẫn sử dụng, giải đáp thắc mắc sản phẩm
+                    </div>
+
+                    <div class="kc">
+                        <input type="checkbox" name="" id="">Xuất hóa đơn công ty
+                    </div>
+                </div>
+                <div class="MGG">
+                    <a href="">
+                        <div class="sudung">
+                            <p>Sử dụng mã giảm giá</p>
+                        </div>
+                    </a>
+                    <div class="nhapma">
+                        <input type="text" placeholder="Nhập mã giảm giá/Phiếu mua hàng">
+                        
+                    </div>
+                    <div class="nut">
+                        <input type="button" value="Áp dụng">
+                    </div>               
+                </div>
+        </form>
+        </div>
+        <div class="card-bottom">
+            <div><p>Mua nhiều giảm thêm (5sp)</p> <span><i class="fa-solid fa-circle-question" style="color: #005eff;"></i> -997.500 <sup>đ</sup></span></div>
+            <div style="border-bottom: 1px solid #f0f0f0;"><h4>Tổng tiền</h4><span class="price-text">23.750.000<sup>đ</sup></span></div>
+            <div><p>Điểm tích luỹ Quà Tặng VIP:</p> <span>237.450 điểm</span></div>
+            <form action="">
+                <input type="checkbox" checked>
+                <label>Tôi đồng ý chính sách xử lý dữ liệu cá nhân của Thế giới di động.</label>
+            </form>
+            <button class="btn-dathang" type="submit">Đặt hàng</button>
+            <button class="btn-tragop" type="submit">Trả góp qua thẻ<span>Visa, Mastercard, JCB, Amex</span></button>
+            <p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- END: main -->

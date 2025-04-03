@@ -57,6 +57,18 @@
             </nav>
         </div>
     </div>
+
+
+    <div class="section-nav">
+        <div class="wraper">
+                <div class="row">
+                    <div class="bg box-shadow">
+                        [WELCOME]
+                    </div>
+                </div>
+        </div>
+    </div>
+    
     <div class="section-body">
         <div class="wraper">
             <section>

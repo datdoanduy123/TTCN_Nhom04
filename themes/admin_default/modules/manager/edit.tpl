@@ -31,7 +31,7 @@
                 </td>
             </tr>
             <tr>
-            <td colspan="3" class="text-center"><input name="submit1" type="submit" value="{LANG.save}" class="btn btn-primary w100"/>Xác Nhận</td>
+            <td colspan="3" class="text-center"><input name="submit1" type="submit" value="{LANG.save}" class="btn btn-primary w100"/></td>
             </tr>
         </tbody>
     </table>
