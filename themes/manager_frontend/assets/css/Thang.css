@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header li a {
+    color: #000;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top-bar {
+    width: 1350px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+#topdemo {
+    width: 100%;
+    height: 30px;
+}
+
+.header-top-bar img {
+    width: 1180px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FFD400;
+    padding: 10px 0 0 0;
+    height: fit-content;
+}
+
+.header nav {
+    max-width: 1350px;
+    min-width: 900px;
+    margin: auto;
+}
+
+#logo {
+    min-width: 228px;
+    height: 40px;
+    background-position: 0 -176px;
+    background-image: url("https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/iconnew.webp");
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 310px 257px;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header nav ul, .header-main > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    min-height: 40px;
+}
+
+.header nav ul li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav ul li div a {
+    font-size: 14px;
+}
+
+.header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header nav ul li,
+.header nav ul a {
+    color: #000;
+    font-size: 12px;
+}
+
+.header nav ul li:nth-child(2) {
+    background-color: #FFAC0A99;
+    border-radius: 5px;
+    padding: 3px 10px;
+    min-width: 12%;
+}
+
+.header nav ul li:nth-child(2) a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 34px;
+}
+
+.header nav ul li:nth-child(2) a p b {
+    margin-top: 3px;
+}
+
+.header nav ul li:nth-child(2) p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header nav ul li:nth-child(3) {
+    position: relative;
+    width: 20%;
+    min-width: 160px;
+}
+
+.header nav ul li:nth-child(3) input {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.header nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.header nav ul li:nth-child(4) {
+    background-color: #FFAC0A99;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 80px;
+    text-align: center;
+}
+
+.shopping {
+    background-color: #FFAC0A99;
+    border-radius: 5px;
+    padding: 0 3px;
+    min-width: 92px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.shopping a{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.shopping p {
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.header nav ul li:nth-child(5) i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.list-items {
+    display: flex;
+}
+
+.list-items div {
+    padding: 5px 15px;
+    text-align: center;    
+}
+
+.list-items div a {
+    font-size: 15px;
+}
+
+#hoidap {
+    border-left: 1px solid #ffffff5d;
+    border-right: 1px solid #ffffff5d;
+}
+
+.header-main {
+    max-width: 1350px;
+    min-width: 1000px;
+    margin: auto;
+}
+
+.header-main > ul > li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.header-main > ul {
+    margin-top: 10px;
+    min-height: 50px;
+}
+
+.header i.bx.bxs-down-arrow {
+    font-size: 10px;
+    margin-left: 8px;
+    color: #000000b7;
+}
+
+.header-main > ul > li a span {
+    font-size: 14px;
+    display: flex;    
+    align-items: center;
+}
+
+.header-main > ul > li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+li {
+    margin-left: 10px;
+}
+
+
+/* ----------------------------adress form-------------------- */
+
+.adress-form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.adress-form-content {
+    width: 450px;
+    height: 470px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+.adress-form-content form {
+    padding: 0 40px;
+}
+.adress-form-content h2 {
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-weight: bold;
+}
+.adress-form-content h2 span {
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.adress-form-content form b {
+    font-size: 16px;
+}
+.adress-form-content form select, .adress-form-content form input {
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.adress-form-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #F97E0E;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+/* ---------------submenu---------------- */
+.header-main > ul > li {
+    position: relative;
+}
+.submenu {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 5px;
+    display: none;
+}
+
+.header-main ul li:hover .submenu {
+    display: flex;
+}
+
+.submenu ul {
+    width: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu ul li p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+.submenu ul li {
+    margin: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 6px 0;
+}
+
+.submenu ul li a {
+    font-size: 13px;
+    white-space: nowrap;
+}
+.submenu ul li:hover  a{
+    color: black;
+    font-weight: bold;
+    transition: 0.5;
+}
+
+/* -----------------------------Giỏ hàng css------------------- */
+.shopping{
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+}
+
+.shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 8%;
+    padding: 3px 10px;
+}
+
+/* ----------------------------Cart----------------------------- */
+.card1{
+    z-index: 3;
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 50%;
+    transition: 0.5s;
+}
+.active .card1{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card1 h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+.card1 .checkOut{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.button1 {
+    background-color: #ddd;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+    font-size: 16px;
+    padding: 3px;
+    text-align: center;
+  }
+.card1 .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card1 .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+
+.listCard {
+    height: 70%;
+    overflow-y: auto;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+    margin: 5px 0;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}

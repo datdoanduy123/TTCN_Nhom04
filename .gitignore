@@ -22,5 +22,8 @@ package-lock.json
 .vscode/
 .idea/
 *.sublime-workspace
+<<<<<<< HEAD
 .htaccess
 config.php
+=======
+>>>>>>> 377a3f38b85e4e88cb1a8496fd543c310c82df1e

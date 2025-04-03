@@ -1,0 +1,695 @@
+<!-- BEGIN: main -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="css/Thang.css">
+    <link rel="stylesheet" href="css/Hoang.css">
+
+    <link rel="stylesheet" href="/css/product_details.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Thanh quang cao tren -->
+    <div class="header-top-bar">
+        <div id="topdemo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- khối silde -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/anhduan1.webp" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/anhbanner2.webp" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/anhbanner3.webp" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/anhbanner4.webp" alt="">
+                </div>
+            </div>
+
+            <!-- nút di chuyển  -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#topdemo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#topdemo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="header">
+        <nav>
+            <ul>
+                <a href="/index.html"><li id="logo">
+                </li></a>
+                <li id="adress-form"><a href="#">
+                        <p>Xem giá tồn kho tại: <b>Đà nẵng</b></p><i class='bx bxs-down-arrow'></i>
+                    </a>
+                </li>
+                <li>
+                    <form action=""><input type="text" placeholder="Bạn tìm gì ..."><i class='bx bx-search'></i></form>
+                </li>
+                <li><a href="#">Tài khoản & Đơn hàng</a></li>
+                <li class="shopping"><a href="/card_product.html"><i class='bx bx-cart'></i>
+                        <p>Giỏ hàng</p>
+                    </a></li>
+                <li>
+                    <div class="list-items">
+                        <div><a href="#">24h<br>Công nghệ</a></div>
+                        <div id="hoidap" style="line-height: 30px;"><a href="#">Hỏi đáp</a></div>
+                        <div style="line-height: 30px;"><a href="#">Game App</a></div>
+                    </div>
+                </li>
+                <div class="adress-form">
+                    <div class="adress-form-content">
+                        <h2>Chọn địa chỉ nhận hàng <span id="adress-close">X Đóng</span></h2>
+                        <form action="">
+                            <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                            <select name="" id="">
+                                <option value="#">--Chọn địa điểm</option>
+                                <option value="#">Đà nẵng</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="#">--Chọn Quận\Huyện</option>
+                                <option value="#">Đà nẵng</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="#">--Chọn Phường\Xã</option>
+                                <option value="#">Đà nẵng</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, Tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="header-main">
+            <ul>
+                <li><a href="#"><i class='bx bx-mobile-alt'></i><span>Điện thoại</span></a></li>
+                <li><a href="#"><i class='bx bx-laptop'></i><span>Laptop</span></a></li>
+                <li><a href="#"><i class='bx bx-tab'></i><span>Tablet</span></a></li>
+                <li><a href="#"><i class='bx bx-headphone'></i><span>Phụ kiện<i class='bx bxs-down-arrow'></i></span></a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <p>Phụ kiện di động</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Phụ kiện laptop</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Thiết bị nhà thông minh</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="#"><i class='bx bxs-watch-alt'></i><span>Smartwatch</span></a></li>
+                <li><a href="/index.html"><i class='bx bxs-watch'></i><span>Đồng hồ</span></a></li>
+                <li><a href="#"><i class='bx bx-mobile'></i><span>Máy cũ giá rẻ</span></a></li>
+                <li><a href="#"><box-icon name='desktop'></box-icon><span>PC, Máy in</span><i
+                            class='bx bxs-down-arrow'></i></a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="#">Máy in</a></li>
+                            <li><a href="#">Mực in</a></li>
+                            <li><a href="#">Phụ kiện máy tính</a></li>
+                            <li><a href="#">Máy tính để bàn</a></li>
+                            <li><a href="#">Phần mềm</a></li>
+                            <li><a href="#">Màn hình máy tính</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><span>Thẻ cào, Sim</span></a></li>
+                <li><a href="#"><span>Dịch vụ tiện ích</span><i class='bx bxs-down-arrow'></i></a>
+                    <div class="submenu" style="left: unset; right: 0;">
+                        <ul>
+                            <li>
+                                <p>Thanh toán hoá đơn</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Tài chính bảo hiểm</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Tiện ích viễn thông</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    <a href="#">Đồng hồ thông minh</a>
+                    <i class="fa-solid fa-angle-right" style="color: #a3a3a3;"></i>
+                    <a href="#">Đông hồ thông minh Xiaomi</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title">
+                    <div class="title-left">
+                        <h4>Vòng đeo tay thông minh Xiaomi Redmi Band 2</h4>
+                        <li><i class="fa-solid fa-star" style="color: #fff700;"></i>
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                            <i class="fa-solid fa-star" style="color: #a6a6a6;"></i>
+                        </li>
+                        <li>271 đánh giá</li>
+                        <button><i class="fa-solid fa-circle-plus" style="color: #0400ff;"></i> so sánh</button>
+                    </div>
+                    <div class="title-right">
+                        <button><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i>Thích 5</button>
+                        <button>Chia sẻ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7">
+                <div id="details" class="carousel slide" data-bs-ride="carousel">
+                    <!--nút silde -->
+                    <!-- <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="7"></button>
+                        <button type="button" data-bs-target="#details" data-bs-slide-to="8"></button>
+                    </div> -->
+
+                    <!-- khối silde -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe width="730" height="403"
+                                src="https://www.youtube.com/embed/uUaG71ex20c?si=fLGplAjJ1qi-1fVi"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh1.jpg" alt="" class="d-block" style="width:100%" height="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh2.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh3.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh4.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh5.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh6.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh7.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/details/anh8.jpg" alt="" class="d-block"
+                                style="width: 100%; height: 100%;">
+                        </div>
+
+                    </div>
+
+                    <!-- nút di chuyển  -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#details" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#details" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="info-other">
+                    <p><a href="#">Xem tất cả điểm nổi bật </a><span id="pageIndicator">(1/8)</span></p>
+                    <div class="icon-list">
+                        <img src="images/details/icon1.png" alt="">
+                        <img src="images/details/icon4.jpg" alt="">
+                        <img src="images/details/icon2.png" alt="">
+                        <img src="images/details/icon3.png" alt="">
+                    </div>
+                    <div class="baohanh">
+                        <div class="top">
+                            <div><img src="images/details/baohanh1.png" alt="">
+                                <p>Bảo hành <b>chính hãng 1 năm</b> tại các trung tâm bảo hành hãng <span>Xem địa chỉ
+                                        bảo hành</span></p>
+                            </div>
+                            <div><img src="images/details/baohanh2.png" alt="">Bộ sản phầm gồm: Dây sạc, Sách hướng dẫn,
+                                Hộp</div>
+                        </div>
+                        <div class="bottom">
+                            <div><img src="images/details/baohanh3.png" alt="">
+                                <p>Hàng giao tận nhà nhanh chóng <span>Tìm hiểu</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/details/anh_other_1.jpg" alt="" width="100%">
+                </div>
+
+            </div>
+            <div class="col-sm-5">
+                <div class="chi-tiet-gia">
+                    <p>Giá tại <a href="#">Hà Nội <i class="fa-solid fa-chevron-down"></i></a></p>
+                    <h5><b>540.000<sup>đ</sup></b><s> 990.000<sup>đ</sup></s><span> -45%</span></h5>
+                    <div class="diem">
+                        <img src="images/details/logo_details.png" alt="">
+                        <p><b>+5.400</b> điểm tích luỹ Quà Tặng VIP</p>
+                        <img src="images/details/question_mark.png" alt="">
+                    </div>
+                    <p>Giá và khuyên mãi dự kiến áp dụng đến 23:59 | 31/10</p>
+                    <p><a href="#"><i class="fa-solid fa-location-dot"></i> Chọn địa chỉ nhận hàng</a> để biết thời gian
+                        giao.</p>
+                    <button type="submit"><a href="/card_product.html">MUA NGAY</a></button>
+                    <p class="hotline">Gọi đặt mua <a href="#">1800.1060 </a> (7:30 - 22:00)</p>
+                    <div class="uu-dai">
+                        <h6><b>2 ưu đãi thêm </b><span> dự kiến áp dụng đến 23:59 | 31/10</span></h6>
+                        <p><i class="fa-solid fa-circle-check" style="color: #1ae000;"></i> Mua quạt điều hoà giảm đến
+                            56% (không áp dụng khuyên mãi khác).<a href="#">(click xem chi tiết)</a></p>
+                        <p><i class="fa-solid fa-circle-check" style="color: #1ae000;"></i> Mua Bếp điện từ đôi, Hút mùi
+                            giảm sốc đến 44% (không áp dụng khuyến mãi khác).<a href="#">(click xem chi tiết)</a></p>
+                    </div>
+                </div>
+                <div class="qr-link">
+                    <figure>
+                        <img src="images/details/qr.png" alt="Đây là qr" width="80px">
+                        <figcaption><i>Quét để tải app</i></figcaption>
+                    </figure>
+                    <div class="qr-link-text">
+                        <h5><img src="images/details/logo_details.png" alt=""> Quà Tặng VIP</h5>
+                        <p>Tích & Sử dụng điểm <br> cho khách hàng thân thiết</p>
+                        <i>Sản phẩm của tập đoàn MWG</i>
+                    </div>
+                    <div class="down">
+                        <button><img src="images/details/ggplay.png" alt=""></button>
+                        <button><img src="images/details/appstore.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="cau-hinh">
+                    <h4><b>Cấu hình Vòng đeo tay thông minh Xiaomi Redmi Band 2</b></h4>
+                    <table>
+                        <tr class="odd">
+                            <td>Màn hình:</td>
+                            <td>TFT1.47 inch</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Thời lượng pin:</td>
+                            <td>Khoảng 14 ngày</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Kết nối với hệ điều hành:</td>
+                            <td>iOS 12 trở lên, Android 6.0 trở lên</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Mặt:</td>
+                            <td>Kính cường lực 2.5D, 42.81 mm</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Tính năng cho sức khỏe:</td>
+                            <td>Theo dõi mức độ stress, Tính quãng đường chạy, Đếm số bước chân, Đo nồng độ oxy (SpO2),
+                                Theo dõi giấc ngủ, Đo nhịp tim, Theo dõi chu kỳ kinh nguyệt</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Hãng</td>
+                            <td>
+                                <p>Xiaomi. <a href="#"> Xem thông tin hãng</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><i class="fa-solid fa-paperclip" style="color: #8c8c8c;"></i><a href="#"> Hướng Dẫn Sử Dụng Tiếng
+                            Việt</a> [PDF, 0.1MB]</p>
+                    <button class="btn-xemthem" type="button">Xem thêm yêu cầu chi tiết <i
+                            class="fa-solid fa-caret-right" style="color: #005eff;"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Hoàng làm tiếp -->
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="Ttsp">
+                    <b>Thông tin sản phẩm</b>
+                    <br>
+                    <a href="#">Vòng đeo tay thông minh Xiaomi Redmi Band 2 </a>
+                    <b> một thiết bị đeo nhỏ gọn, bất kỳ ai cũng có thể sử dụng. Sản phẩm sở hữu thiết kế hiện đại, đa
+                        dạng các tính năng sức khỏe, chế độ luyện tập, khả năng kết nối ổn định, thời lượng pin kéo
+                        dài,... sẵn sàng đồng hành cùng người dùng trong mọi trường hợp.</b>
+                    <br>
+                    <b>Vô cùng gọn nhẹ khi đeo trên tay</b>
+                    <p style="font-size: 16px;">Nhìn bên ngoài, Xiaomi Redmi Band 2 không khác gì một chiếc <a href="#"
+                            style="font-size: 16px;">đồng hồ thông minh.</a> Sản phẩm có khung viền bằng <b
+                            style="font-size: 16px;"> nhựa PC</b> giúp tối ưu khối lượng, sử dụng <b
+                            style="font-size: 16px;"> kính cường lực 2.5D</b> để bảo vệ màn hình khi lỡ va chạm trong
+                        quá trình sử dụng.</p>
+                    <img src="/images/products/anh1.png" alt="" width="100%">
+                    <div class="Xemthem">
+
+                        <a href="#">Xem Thêm</a>
+                    </div>
+                </div>
+                <div class="Danhgia">
+                    <h3><b>Đánh giá Vòng đeo tay thông minh Xiaomi Redmi Band 2</b></h3>
+                    <ul class="saotong">
+                        <li>
+                            <p>4.6</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: #a6a6a6;"></i>
+                        </li>
+                        <li><a href="#">74 Đánh giá</a></li>
+                    </ul>
+                    <ul class="xuongtientrinh">
+
+                        <li>
+                            <b>5</b>
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                            <progress value="65" max="100" class="chinhthanhtientrinh"></progress>
+                            <a href="#"><b>65%</b></a>
+                        </li>
+                        <li>
+                            <b>4</b>
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                            <progress value="30" max="100" class="chinhthanhtientrinh"></progress>
+                            <a href="#"><b>30%</b></a>
+                        </li>
+                        <li>
+                            <b>3</b>
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                            <progress value="4" max="100" class="chinhthanhtientrinh"></progress>
+                            <a href="#"><b>4%</b></a>
+                        </li>
+                        <li>
+                            <b>2</b>
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                            <progress value="1" max="100" class="chinhthanhtientrinh"></progress>
+                            <a href="#"><b>1%</b></a>
+                        </li>
+                        <li>
+                            <b>1</b>
+                            <i class="fa-solid fa-star" style="color: #000000;"></i>
+                            <progress value="0" max="100" class="chinhthanhtientrinh"></progress>
+                            <a href="#"><b>0%</b></a>
+                        </li>
+
+                    </ul>
+                    <ul class="anhdg">
+                        <li><img src="/images/products/anhdg1.jpg"></li>
+                        <li><img src="/images/products/anhdg2.jpg"></li>
+                        <li><img src="/images/products/anhdg3.jpeg"></li>
+                        <li><img src="/images/products/anhdg4.jpeg"></li>
+                        <li><img src="/images/products/anhdg5.jpg"></li>
+                    </ul>
+                    <div class="cmt">
+                        <li><b>Trần Thanh Toàn</b><a href="#"> Đã mua tại TGDD</a></li>
+                        <li>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: #a6a6a6;"></i>
+                            <i class="fa-solid fa-heart " style="color: #ee1b24;"></i> Sẽ giới thiệu cho bạn bè,người
+                            thân
+                        </li>
+                        <li>
+                            <p>Pin trâu sản phẩm chắc lượng nhân viên nhiệt tình</p>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-thumbs-up"></i> Hữu ích | Đã dùng khoảng 1 tuần
+                        </li>
+                    </div>
+                    <div class="cmt">
+                        <li><b>Lê Trinh</b><a href="#"> Đã mua tại TGDD</a></li>
+                        <li>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 159, 0);"></i>
+                            <i class="fa-solid fa-star" style="color: #a6a6a6;"></i>
+
+                        </li>
+                        <li>
+                            <p>Tốt so với tầm giá</p>
+                        </li>
+                        <li>
+                            <img src="/images/products/anhdg6.jpg" alt="">
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-thumbs-up"></i> Hữu ích | Đã dùng khoảng 1 tuần
+                        </li>
+                    </div>
+                    <hr class="Chinhhr">
+                    <div class="Xemdg">
+                        <div class="xemviet">
+                            <a href="#">Xem 74 đánh giá</a>
+                        </div>
+                        <div class="xemviet">
+                            <a href="#">Viết đánh giá</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row ">
+            <div class="col-sm-7 Bl">
+                <div class="Blt">
+                    <b>Bình Luận</b>
+                    <br>
+                    <input type="textbox" placeholder="Mời bạn bình luận hoặc đặt câu hỏi">
+                </div>
+                <hr>
+                <div class="Bl1">
+                    <b>Hương</b>
+                    <br>
+                    <p>Mẫu này có màu trắng kh ạ</p>
+                    <a href="#">Trả lời</a>
+                    <a href="#"><i class="fa-regular fa-thumbs-up"></i>Thích</a>
+                    <br>
+                    <div class="Qtv">
+                        <b>Dương Thúy-QTV</b>
+                        <p>Dạ chào anh chị. Vòng đeo tay thông minh Xiaomi Redmi Band 2 dạ sản phẩm này hệ thống chỉ còn
+                            kinh doanh màu đen ạ. Dạ nếu ưng ý sản phẩm, cho em xin số điện thoại để em chuyển bộ phận
+                            tổng đài liên hệ tư vấn cụ thể hơn và chốt đơn hàng ngay cho mình hoặc có thể liên hệ tổng
+                            đài miễn phí TGDD 18001060 ( ĐMX 18001061 ) để được hỗ trợ nhanh chóng nhé ạ. Mong phản hồi
+                            từ anh chị ạ.</p>
+
+                        <a href="#">Trả lời</a>
+                        <a href="#">
+                            <i class="fa-regular fa-thumbs-up"></i> Hài lòng
+
+                        </a>
+                        <a href="#"><i class="fa-regular fa-thumbs-down"></i> Không hài lòng</a>
+                    </div>
+                </div>
+                <div class="Bl2">
+                    <b>Nguyễn Thị Hồng Nhung</b>
+                    <p>Sản phẩm rất tốt</p>
+                    <a href="#">Trả lời
+                        <i class="fa-regular fa-thumbs-up"></i> Thích
+                    </a>
+                </div>
+                <hr>
+                <div class="Bl2">
+                    <b>Nguyễn Thị Hồng Phượng</b>
+                    <p>Sản phẩm này rất chất lượng</p>
+                    <a href="#">Trả lời
+                        <i class="fa-regular fa-thumbs-up"></i> Thích
+                    </a>
+                </div>
+                <hr>
+                <div class="Bl2">
+                    <b>Đặng Phi Vũ</b>
+                    <p>Sản phảm đẹp hộp với túi tiền</p>
+                    <a href="#">Trả lời
+                        <i class="fa-regular fa-thumbs-up"></i> Thích
+                    </a>
+                </div>
+                <hr>
+                <div class="Bl1">
+                    <b>Nguyễn Ngọc Thắng</b>
+                    <br>
+                    <p>Rất tốt nên mua dùng</p>
+                    <a href="#">Trả lời</a>
+                    <a href="#"><i class="fa-regular fa-thumbs-up"></i>Thích</a>
+                    <br>
+                    <div class="Qtv">
+                        <b>Thu Lê-QTV</b>
+                        <p>Chào anh/chị.
+                            <br>
+                            Dạ cảm ơn anh/chị đã quan tâm mua hàng và đánh giá sản phẩm ạ.
+                            Chúc anh/chị một ngày tốt lành ạ.
+                        </p>
+
+                        <a href="#">Trả lời</a>
+                        <a href="#">
+                            <i class="fa-regular fa-thumbs-up"></i> Hài lòng
+
+                        </a>
+                        <a href="#"><i class="fa-regular fa-thumbs-down"></i> Không hài lòng</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="Bl2">
+                    <b>Quyên</b>
+                    <p>sản phẩm tốt chất lượngg</p>
+                    <a href="#">Trả lời
+                        <i class="fa-regular fa-thumbs-up"></i> Thích
+                    </a>
+                </div>
+                <hr>
+                <div class="Bl2">
+                    <b>Nguyễn Văn Lập</b>
+                    <p>Sản phẩm này rất tốt cảm ơn</p>
+                    <a href="#">Trả lời
+                        <i class="fa-regular fa-thumbs-up"></i> Thích
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="khoitong2">
+        <hr>
+        <div class="khoitong2tren">
+            <div class="khoi21">
+                <a href="#">Tích điểm Quà tặng VIP</a>
+                <a href="#">Lịch sử mua hàng</a>
+                <a href="#">Tìm hiểu về mua trả góp</a>
+                <a href="#">Chính sách bảo hành</a>
+                <a href="#">Xem thêm</a>
+            </div>
+            <div class="khoi22">
+                <a href="#">Giới thiệu công ty (MWG.vn)</a>
+                <a href="#">Tuyển dụng</a>
+                <a href="#">Gửi góp ý, khiếu nại</a>
+                <a href="#">Tìm siêu thị (3.361 shop)</a>
+                <a href="#">Xem bản mobile</a>
+            </div>
+            <div class="khoi23">
+                <b>Tổng đài hỗ trợ (Miễn phí gọi)</b>
+                <p>Khiếu nại: <a href="#">1800.1062</a> (8:00 - 21:30)</p>
+                <p>Bảo hành: <a href="#">1800.1064</a> (8:00 - 21:00)</p>
+            </div>
+            <div class="khoi24">
+                <div class="khoi24tren">
+                    <div>
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: #4166b0;"> </i>3918.3k Fan </a>
+                        <a href="#"><i class="fa-brands fa-youtube" style="color: #fe0200;"></i> 862k Đăng ký </a>
+                        <a href="#"><img src="/images/anhzl.webp" alt=""> Zalo TGDĐ</a>
+                    </div>
+                    <div class="anhdautu">
+                        <a href="#"><img src="/images/anh241.png" alt=""></a>
+                        <a href="#"><img src="/images/anh242.png" alt=""></a>
+                        <a href="#"><img src="/images/anh243.png" alt=""></a>
+                        <a href="#"><img src="/images/anh244.png" alt=""></a>
+
+                    </div>
+                </div>
+                <div class="khoi24duoi">
+                    <b>Website cùng tập đoàn</b>
+                    <div class="anhtapdoan">
+                        <a href="#"><img src="/images/anh245.png" alt=""></a>
+                        <a href="#"><img src="/images/anh246.png" alt=""></a>
+                        <a href="#"><img src="/images/anh247.png" alt=""></a>
+                        <a href="#"><img src="/images/anh248.png" alt=""></a>
+                        <a href="#"><img src="/images/anh249.png" alt=""></a>
+                        <a href="#"><img src="/images/anh2450.png" alt=""></a>
+                        <a href="#"><img src="/images/anh2451.png" alt=""></a>
+                        <a href="#"><img src="/images/anh2452.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="khoitong2duoi">
+        <p>© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007.
+            GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+            Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô
+            T2-1.2, Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+            cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Email: Tot.huynhvan@thegioididong.com.
+            <a href="#">Xem chính sách sử dụng</a>
+        </p>
+    </div>
+    <script src="Thegioididong.js"></script>
+</body>
+</html>
+
+<!-- END: main -->

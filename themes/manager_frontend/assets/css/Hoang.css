@@ -1,0 +1,266 @@
+.khoitong1{
+    width: 1350px;
+    /* height: 468px; */
+    /* margin: 0px 200px; */
+    margin: 0 auto;
+    padding-left: 10px;
+    
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border-radius: 10px;
+    padding: 30px 5px;
+    background-color: #b3b3b354;
+}
+
+.tong1{
+    display: flex;
+}
+
+.tong1 a{
+    text-decoration: none;
+    color: rgb(40, 168, 231);
+    margin-right: 5px;
+}
+.tong2{
+    display: flex;
+    width: 100%;
+}
+
+#demo{
+    width: 70%;
+}
+
+#demo .carousel-item img{
+    height: 240px;
+    margin-right: 10px;
+}
+
+.tong2phai {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.tong2phai img{
+    width: 100%;
+    height: 120px;    
+}
+.bodershow{
+    width: 747px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.bodershow img{
+    display: flex;
+    width: auto;
+    max-height: 25px;
+    max-width: 98%;
+    object-fit: contain;
+    justify-content: center;
+}
+.bodershow1{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodershow2{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodershow3{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodershow4{
+    
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* Style cho dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Style cho button mở dropdown */
+  .dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* Style cho nội dung dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+  
+  /* Style cho các mục trong dropdown */
+  .dropdown-content a {
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* color: black; */
+  }
+  
+  /* Khi rê chuột lên một mục, thay đổi màu nền */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Hiển thị dropdown khi hover vào button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Tùy chỉnh padding và margins cho mục li trong dropdown */
+  .tong3 li {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+  }
+.tong3{
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 1350px;
+    
+}
+.tong3 a {
+    text-decoration: none;
+    color: black;
+}
+.tong3 li{
+    
+    border: 1px solid black; 
+    margin: 5px ; 
+    padding: 5px;
+    color: black;
+}
+.tong3 ul {
+    list-style-type: none; 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.tong4 a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.khoitong2{
+    width: 1350px;
+    margin: 0 auto;
+}
+.khoitong2 hr{
+    width: 100%;
+    margin: 0;
+}
+.khoitong2tren{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.khoi21{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    
+}
+.khoi21 a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    
+}
+.khoi22{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    
+}
+.khoi22 a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    
+}
+.khoi23{
+    padding-top: 10px;
+}
+.khoi23 a{
+    text-decoration: none;
+    color: rgb(47, 128, 237);
+}
+.khoi24 a {
+    text-decoration: none;
+    color: rgb(47, 128, 237);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.khoi24{
+    padding-left: 100px;
+}
+.khoi24 i{
+    padding-right: 10px;
+}
+.khoi24 img{
+    position: relative;
+    top:5px;
+    width: 20px;
+}
+.anhdautu a img{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
+.khoi24duoi{
+    margin-top: 30px;
+}
+.khoi24duoi{
+    width: 495px;
+}
+.khoi24duoi b{
+    padding-left: 10px;
+}
+.anhtapdoan a img{
+    width: 100px;
+    height: 30px;
+}
+.khoitong2duoi{
+    width: 100%;
+    font-size: 13px;
+    border: 1px solid gray;
+    background-color: rgb(241, 241, 241);
+    padding-left: 10px;
+    
+}
+.khoitong2duoi p{
+    padding-left: 80px;
+    padding-right: 90px;
+}
+.khoitong2duoi a{
+    
+    text-decoration: none;
+    color: rgb(40, 138, 219);
+}
