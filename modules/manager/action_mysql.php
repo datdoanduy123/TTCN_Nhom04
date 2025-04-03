@@ -55,7 +55,7 @@
     `name` VARCHAR(255) NOT NULL,
     `phone` VARCHAR(20) NOT NULL,
     `email` VARCHAR(255) NOT NULL UNIQUE,
-    `password` VARCHAR(255) NOT NULL COMMENT 'Mật khẩu (đã mã hóa)',
+    `address` VARCHAR(255) NOT NULL COMMENT 'địa chỉ',
     `purchase_history` TEXT
 ) ENGINE = InnoDB COMMENT = 'Danh sách khách hàng';";
 

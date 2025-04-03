@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-02 22:17:39
+/* Smarty version 5.4.3, created on 2025-04-02 23:06:54
   from 'file:global.social.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ed55133e7dc2_53492420',
+  'unifunc' => 'content_67ed609e761743_55571091',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67ed55133e7dc2_53492420 (\Smarty\Template $_smarty_tpl) {
+function content_67ed609e761743_55571091 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\blocks\\smarty';
 ?><span class="visible-xs-inline-block"><a title="<?php echo $_smarty_tpl->getValue('LANG')->get('joinnow');?>
 " class="pointer button" data-toggle="tip" data-target="#socialList" data-click="y"><em class="fa fa-share-alt fa-lg"></em><span class="hidden"><?php echo $_smarty_tpl->getValue('LANG')->get('joinnow');?>

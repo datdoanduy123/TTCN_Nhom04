@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-02 21:54:41
+/* Smarty version 5.4.3, created on 2025-04-02 22:30:10
   from 'file:main.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ed4fb14c8bb3_34299189',
+  'unifunc' => 'content_67ed5802a72006_80543616',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67ed4fb14c8bb3_34299189 (\Smarty\Template $_smarty_tpl) {
+function content_67ed5802a72006_80543616 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\admin_future\\modules\\siteinfo';
 if ($_smarty_tpl->getValue('PACKAGE_UPDATE')) {?>
 <div class="card text-bg-primary mb-4" id="notice-update-package">

@@ -15,8 +15,8 @@
  
  $submenu['main'] = "Quản lý sản phẩm";
 
- $submenu['create_product'] = $nv_Lang->getModule('create_product');
- $submenu['create_category'] = $nv_Lang->getModule('create_category');
+//  $submenu['create_product'] = $nv_Lang->getModule('create_product');
+//  $submenu['create_category'] = $nv_Lang->getModule('create_category');
  $submenu['customer'] = $nv_Lang->getModule('customer');
  $submenu['categories'] = $nv_Lang->getModule('categories');
 

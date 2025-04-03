@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-02 21:54:48
+/* Smarty version 5.4.3, created on 2025-04-02 22:30:16
   from 'file:main.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ed4fb85a9ee8_37045622',
+  'unifunc' => 'content_67ed5808e494b6_52973312',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ))) {
-function content_67ed4fb85a9ee8_37045622 (\Smarty\Template $_smarty_tpl) {
+function content_67ed5808e494b6_52973312 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\admin_future\\system';
 $_smarty_tpl->renderSubTemplate('file:header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), (int) 0, $_smarty_current_dir);
 ?>

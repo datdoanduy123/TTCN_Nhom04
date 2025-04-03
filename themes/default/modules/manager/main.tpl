@@ -9,24 +9,23 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Hình ảnh</th>
-                <th>Mô tả</th>
-                <th>Danh mục</th>
+                 <th>Hình ảnh</th>
+                 <th>Tên Sản Phẩm</th>
+                 <th>Giá</th>
+                 <th>Số Lượng Trong Kho</th>
+                 <th>Danh Mục</th>
+
             </tr>
         </thead>
         <tbody>
             <!-- BEGIN: loop -->
             <tr>
                 <td>{ROW.id}</td>
-                <td>{ROW.name}</td>
-                <td>{ROW.price}</td>
-                <td>{ROW.quantity}</td>
-                <td><img src="{ROW.image_path}" width="100" height="100" onerror="this.onerror=null; this.src='uploads/no-image.png';"></td>                
-                <td>{ROW.description}</td>
-                <td>{ROW.category_name}</td>
+                 <td><img src="{ROW.image_path}" width="70" height="70" onerror="this.onerror=null; this.src='uploads/no-image.png';"></td>
+                 <td>{ROW.name}</td>
+                 <td>{ROW.price}</td>
+                 <td>{ROW.quantity}</td>
+                 <td>{ROW.category_name}</td> 
             </tr>
             <!-- END: loop -->
         </tbody>

@@ -30,4 +30,4 @@
  $lang_module['edit_customer'] = 'Sửa thông tin khách hàng';
  $lang_module['edit_categories'] = 'Sửa thông tin danh mục';
  $lang_module['list_customer'] = 'Danh sách khách hàng';
- $lang_module['categories'] = 'Danh sách danh muc';
+ $lang_module['categories'] = 'Quản lý danh mục';

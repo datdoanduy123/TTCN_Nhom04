@@ -7,9 +7,9 @@ $page_title = $nv_Lang->getModule('create_customer');
 
 if ($nv_Request->isset_request('submit_customer', 'post')) {
     $name = $nv_Request->get_title('name', 'post', '', 255);
-    $phone = $nv_Request->get_title('phone', 'post', '', 20);
     $email = $nv_Request->get_title('email', 'post', '', 255);
-    $password = $nv_Request->get_title('password', 'post', '', 255);
+    $phone = $nv_Request->get_title('phone', 'post', '', 20);
+    $address = $nv_Request->get_title('address', 'post', '', 255);
 
     // Kiểm tra dữ liệu đầu vào
     if (empty($name)) {
@@ -19,27 +19,25 @@ if ($nv_Request->isset_request('submit_customer', 'post')) {
     if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         die('Lỗi: Email không hợp lệ.');
     }
+    // Kiểm tra dữ liệu đầu vào
+    if (empty($address)) {
+        die('Lỗi: Địa chỉ khách hàng không được để trống.');
 
-    if (empty($password) || strlen($password) < 6) {
-        die('Lỗi: Mật khẩu phải có ít nhất 6 ký tự.');
     }
 
-    // Mã hóa mật khẩu bằng password_hash()
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
     // Chèn dữ liệu vào bảng customers
-    $sql = "INSERT INTO " . NV_PREFIXLANG . "_" . $module_data . "_customers (name, phone, email, password) 
-            VALUES (:name, :phone, :email, :password)";
+    $sql = "INSERT INTO " . NV_PREFIXLANG . "_" . $module_data . "_customers (name, phone, email, address) 
+            VALUES (:name, :phone, :email, :address)";
     
     try {
         $stmt = $db->prepare($sql);
         $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-        $stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-        $stmt->bindParam(':password', $hashed_password, PDO::PARAM_STR);
+        $stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
+        $stmt->bindParam(':address', $address, PDO::PARAM_STR);
         
         if ($stmt->execute()) {
-            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?module=' . $module_data);
+            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=customer');
             exit(); // Dừng thực thi script sau khi chuyển hướng
         } else {
             throw new Exception('Lỗi khi thêm khách hàng.');

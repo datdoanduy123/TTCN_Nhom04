@@ -16,6 +16,8 @@ if (!defined('NV_IS_FILE_ADMIN')) {
 $page_title = $nv_Lang->getModule('categories');
 $array = [];
 
+
+
 // gui csdl de lay du lieu
 
 $query = $db->query('SELECT * FROM ' . NV_PREFIXLANG . '_manager_categories');

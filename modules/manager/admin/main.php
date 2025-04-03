@@ -57,6 +57,7 @@ $num = count($_rows);
 $xtpl = new XTemplate('main.tpl', NV_ROOTDIR . '/themes/' . $global_config['module_theme'] . '/modules/' . $module_file);
 $xtpl->assign('LANG', \NukeViet\Core\Language::$lang_module);
 $xtpl->assign('GLANG', \NukeViet\Core\Language::$lang_global);
+$xtpl->assign('create_product', NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=create_product');
 
 if ($num) {
     foreach ($_rows as $row) {

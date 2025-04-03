@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-02 22:17:40
+/* Smarty version 5.4.3, created on 2025-04-02 23:06:55
   from 'file:block.free_content.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ed5514b72e07_64985056',
+  'unifunc' => 'content_67ed609f77f290_45909422',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67ed5514b72e07_64985056 (\Smarty\Template $_smarty_tpl) {
+function content_67ed609f77f290_45909422 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\modules\\freecontent\\smarty';
 ?><div class="panel-body">
     <div class="featured-products">

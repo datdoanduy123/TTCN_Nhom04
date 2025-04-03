@@ -19,8 +19,8 @@
             </tr>
             
             <tr>
-                <td><strong>Mật khẩu</strong><sup class="required">(*)</sup></td>
-                <td><input type="password" name="password" id="password" class="w300 form-control" required minlength="6" /></td>
+                <td><strong>Địa Chỉ</strong><sup class="required">(*)</sup></td>
+                <td><input type="address" name="address" id="address" class="w300 form-control" required minlength="6" /></td>
             </tr>
             
             <tr>

@@ -26,6 +26,7 @@ if ($nv_Request->isset_request('submit_edit', 'post')) {
     $name = $nv_Request->get_title('name', 'post', '', 255);
     $email = $nv_Request->get_title('email', 'post', '', 255);
     $phone = $nv_Request->get_title('phone', 'post', '', 20);
+    $address = $nv_Request->get_title('address', 'post', '', 255);
 
     if (empty($name)) {
         die('Lỗi: Tên không được để trống.');
@@ -33,17 +34,18 @@ if ($nv_Request->isset_request('submit_edit', 'post')) {
 
     // Cập nhật dữ liệu khách hàng
     $sql = "UPDATE " . NV_PREFIXLANG . "_manager_customers 
-            SET name = :name, email = :email, phone = :phone WHERE id = :id";
+            SET name = :name, email = :email, phone = :phone, address = :address WHERE id = :id";
     
     try {
         $stmt = $db->prepare($sql);
         $stmt->bindParam(':name', $name, PDO::PARAM_STR);
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
+        $stmt->bindParam(':address', $address, PDO::PARAM_STR);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 
         if ($stmt->execute()) {
-            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name);
+            nv_redirect_location(NV_BASE_ADMINURL . 'index.php?' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=customer');
         } else {
             throw new Exception('Lỗi khi cập nhật thông tin khách hàng.');
         }

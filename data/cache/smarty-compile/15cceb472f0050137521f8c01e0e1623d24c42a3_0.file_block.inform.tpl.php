@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.4.3, created on 2025-04-02 22:17:31
+/* Smarty version 5.4.3, created on 2025-04-02 23:06:44
   from 'file:block.inform.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.4.3',
-  'unifunc' => 'content_67ed550bba94b3_17149083',
+  'unifunc' => 'content_67ed6094dad625_27939328',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_67ed550bba94b3_17149083 (\Smarty\Template $_smarty_tpl) {
+function content_67ed6094dad625_27939328 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\xampp\\htdocs\\nukeviet-nukeviet2\\src\\themes\\default\\modules\\inform\\smarty';
 ?><link href="<?php echo (defined('ASSETS_STATIC_URL') ? constant('ASSETS_STATIC_URL') : null);?>
 /js/perfect-scrollbar/style<?php echo (defined('AUTO_MINIFIED') ? constant('AUTO_MINIFIED') : null);?>

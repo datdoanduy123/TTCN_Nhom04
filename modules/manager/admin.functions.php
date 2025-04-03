@@ -25,6 +25,7 @@
      'edit_categories',
      'categories',
      'delete_categories',
+     'delete_customer',
  ];
  
  define('NV_IS_FILE_ADMIN', true);  
