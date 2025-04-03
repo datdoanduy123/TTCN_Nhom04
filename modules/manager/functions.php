@@ -13,4 +13,4 @@
      exit('Stop!!!');
  }
  
- define('NV_IS_MOD_POSTS', true);
+ define('NV_IS_MOD_MANAGER', true);

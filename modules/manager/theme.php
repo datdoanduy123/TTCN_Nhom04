@@ -32,12 +32,14 @@
      $xtpl->assign('LANG', \NukeViet\Core\Language::$lang_module);
      $xtpl->assign('GLANG', \NukeViet\Core\Language::$lang_global);
  
-     // Truyền giá trị tìm kiếm vào template
      $xtpl->assign('SEARCH_VALUE', htmlspecialchars($search));
  
      if (!empty($array_data)) {
          foreach ($array_data as $value) {
-             $xtpl->assign('ROW', $value);
+
+            $value['image_path'] = !empty($value['image']) ? $value['image'] : NV_BASE_SITEURL . 'uploads/no-image.png';
+            $xtpl->assign('ROW', $value);
+
              $xtpl->parse('main.loop');
          }
      }

@@ -20,7 +20,7 @@ $module_version = [
     'virtual' => 1,
     'version' => '0.0.01',
     'date' => 'Saturday, July 17, 2021 4:00:00 PM GMT+07:00',
-    'author' => 'TTCN <contact@vinades.vn>',
+    'author' => 'Nhom_4_TTCN',
     'note' => '',
     'uploads_dir' => [
         $module_upload
