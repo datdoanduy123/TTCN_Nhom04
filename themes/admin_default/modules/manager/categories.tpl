@@ -26,7 +26,7 @@
             <th class="text-nowrap">{ROW.description}</th>
             <td>
                  <a href="{ROW.url_edit_categrories}" class="btn btn-xs btn-warning">Sửa</a>
-                 <a href="{ROW.url_delete_categrories}" class="btn btn-xs btn-danger">Xóa</a>
+<a href="{ROW.url_delete_categrories}" class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục này không?');">Xóa</a>
             </td>
         </tr>
 

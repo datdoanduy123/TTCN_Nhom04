@@ -27,7 +27,8 @@
 
                  <td>
                      <a href="{ROW.edit_url}" class="btn btn-xs btn-warning">Sửa</a>
-                     <a href="{ROW.delete_url}" class="btn btn-xs btn-danger">Xóa</a>
+                     <a href="{ROW.delete_url}" class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục này không?');">Xóa</a>
+
                  </td>
              </tr>
              <!-- END: loop -->

@@ -16,6 +16,12 @@ if (!defined('NV_IS_FILE_ADMIN')) {
 $page_title = $nv_Lang->getModule('categories');
 $array = [];
 
+if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
+    $delete_id = (int)$_GET['delete'];
+    $db->query('DELETE FROM ' . NV_PREFIXLANG . '_manager_categories WHERE id=' . $delete_id);
+    header('Location: ' . NV_BASE_ADMINURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA . '&' . NV_NAME_VARIABLE . '=' . $module_name . '&' . NV_OP_VARIABLE . '=categories');
+    exit();
+}
 
 
 // gui csdl de lay du lieu
